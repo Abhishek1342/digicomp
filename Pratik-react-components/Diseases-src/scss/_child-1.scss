@@ -1,0 +1,50 @@
+@import "./variable";
+.child-1 {
+    border-radius: 15px;
+    background: #F3F3F3;
+    .child-with-img {
+        border-radius: 15px;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .grand-1-img {
+            z-index: 2;
+            position: absolute;
+            img {
+                width: $img-circle;
+                height: $img-circle;
+                border-radius: 50%;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+            }
+        }
+        .grand-1-back {
+            z-index: 1;
+            position: absolute;
+            width: $back-rect;
+            height: $back-rect;
+            background: #CCE3FF;
+            border-radius: 15px;
+            transform: rotate(-45deg);
+        }
+    }
+    // .child-with-bars {
+    .grand-1-bar {
+        background: #FF73B5;
+    }
+    #left-bar {
+        position: relative;
+        margin-top: -7px;
+        height: 7px;
+        width: 66px;
+    }
+    #right-bar {
+        position: relative;
+        margin-top: -66px;
+        margin-left: ($main-width)-7px;
+        width: 7px;
+        height: 66px;
+    }
+    // }
+}
