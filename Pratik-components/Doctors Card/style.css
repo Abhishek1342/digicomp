@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.doctor-card-main {
+  width: 1062px;
+  height: auto;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 16px rgba(52, 52, 52, 0.21);
+          box-shadow: 0px 0px 16px rgba(52, 52, 52, 0.21);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.child-with-img {
+  border-right: 2px solid #000000;
+  width: 317px;
+}
+
+.child-with-img .grand-1-status {
+  position: absolute;
+}
+
+.child-with-img .grand-1-status .gg-1a-bar {
+  margin-left: 13px;
+  height: 70px;
+  width: 6px;
+  background: #fcc14a;
+}
+
+.child-with-img .grand-1-status .gg-1a-circle {
+  margin-left: -7px;
+  width: 44px;
+  height: 44px;
+  background: #fcc14a;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #000000;
+}
+
+.child-with-img .grand-1-img img {
+  width: 315px;
+  height: 260px;
+  border-radius: 5px 0 0 0;
+}
+
+.child-with-img .grand-1-name {
+  height: 64px;
+  background: #e8e8e8;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 0 0 5px;
+}
+
+.child-with-space {
+  width: 831px;
+}
+
+.child-with-button {
+  z-index: 3;
+  position: relative;
+  width: 271px;
+  height: 64px;
+  background: #943aff;
+  border-radius: 50px 0px 0px 50px;
+  right: 0;
+  top: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.child-with-button .grand-3-button a {
+  color: #ffffff;
+  font-weight: bolder;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.child-with-button .grand-3-button a .gg-3a-circle {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.child-with-button .grand-3-button a:hover {
+  text-decoration: none;
+}
+
+.child-with-button:hover {
+  width: 380px;
+  font-size: 22px;
+}
+
+.child-with-content {
+  z-index: 1;
+  position: absolute;
+  width: 745px;
+  margin-left: 317px;
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-right: 100px;
+}
+
+.child-with-content p {
+  font-style: normal;
+  font-size: 20px;
+}
+
+.child-with-content .grand-3-degree {
+  font-weight: bolder;
+  color: #18a5c9;
+  text-transform: uppercase;
+}
+
+.child-with-content .grand-3-address {
+  color: #ad6d3d;
+  text-transform: uppercase;
+}
+
+.child-with-content .grand-3-phone {
+  text-transform: capitalize;
+}
+
+.child-with-content .grand-3-fees {
+  text-transform: capitalize;
+}
+
+.child-with-content .grand-3-rating {
+  margin-top: -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.child-with-content .grand-3-rating .star-rating {
+  margin-right: 14px;
+}
+
+.child-with-content .grand-3-rating .star-rating ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.child-with-content .grand-3-rating .star-rating ul li {
+  font-size: 36px;
+}
+
+.child-with-content .grand-3-rating .number-of-rating {
+  font-weight: bold;
+  padding-top: 16px;
+}
+/*# sourceMappingURL=style.css.map */

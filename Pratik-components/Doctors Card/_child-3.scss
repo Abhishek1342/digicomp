@@ -1,0 +1,38 @@
+.child-with-button {
+    z-index: 3;
+    position: relative;
+    width: 271px;
+    height: 64px;
+    background: #943aff;
+    border-radius: 50px 0px 0px 50px;
+    right: 0;
+    top: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.4s ease-out;
+    .grand-3-button {
+        a {
+            color: #ffffff;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .gg-3a-circle {
+                width: 29px;
+                height: 29px;
+                border-radius: 50%;
+                background: #ffffff;
+            }
+            transition: all 0.4s ease-out;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &:hover {
+        width: 380px;
+        font-size: 22px;
+    }
+}

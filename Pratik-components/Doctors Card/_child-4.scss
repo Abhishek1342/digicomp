@@ -1,0 +1,46 @@
+.child-with-content {
+    z-index: 1;
+    position: absolute;
+    width: 1062-317px;
+    margin-left: 317px;
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-right: 100px;
+    p {
+        font-style: normal;
+        font-size: 20px;
+    }
+    .grand-3-degree {
+        font-weight: bolder;
+        color: rgb(24, 165, 201);
+        text-transform: uppercase;
+    }
+    .grand-3-address {
+        color: #ad6d3d;
+        text-transform: uppercase;
+    }
+    .grand-3-phone {
+        text-transform: capitalize;
+    }
+    .grand-3-fees {
+        text-transform: capitalize;
+    }
+    .grand-3-rating {
+        margin-top: -15px;
+        display: flex;
+        .star-rating {
+            margin-right: 14px;
+            ul {
+                display: flex;
+                list-style: none;
+                li {
+                    font-size: 36px;
+                }
+            }
+        }
+        .number-of-rating {
+            font-weight: bold;
+            padding-top: 16px;
+        }
+    }
+}
