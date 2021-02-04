@@ -1,10 +1,10 @@
-import jhonImg from "./images/Dr.Sins.jpg";
+import dummy from "./images/Dr.dummy";
 
 export const doctorCards = [
   {
     id: 1,
     status: "OPEN",
-    img: jhonImg,
+    img: dummy,
     name: "Dr. Jhonny Sins",
     degree: "Orthopedic Surgeon",
     address:
