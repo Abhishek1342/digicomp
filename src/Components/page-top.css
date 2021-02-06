@@ -1,0 +1,30 @@
+.landing {
+  width: 100%;
+  height: 19.5rem;
+  background: radial-gradient(
+      30.08% 61.23% at 50% 50%,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #eaeef3;
+  text-align: center;
+}
+.texture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  background-image: url("../Components/Images/pattern/cubes.png");
+  padding: 1% 10%;
+  justify-content: space-evenly;
+  /* filter: brightness(85%); */
+}
+
+.page-info {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #5a5a5a;
+}
