@@ -1,0 +1,11 @@
+.child-with-content {
+  .grand-3-rating {
+    .star-rating {
+      ul {
+        li:nth-child(-n + 3) {
+          color: pink;
+        }
+      }
+    }
+  }
+}
