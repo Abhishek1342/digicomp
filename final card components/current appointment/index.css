@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.current-card-main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.curr-app-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  background: #eaedfe;
+  -webkit-box-shadow: 0px 40px 20px -35px rgba(154, 169, 252, 0.54);
+          box-shadow: 0px 40px 20px -35px rgba(154, 169, 252, 0.54);
+  border-radius: 6px;
+}
+
+p {
+  display: inline-block;
+}
+
+.child-with-bars {
+  display: inline-block;
+  position: relative;
+}
+
+.child-with-bars .grand-1-bars {
+  display: inline-block;
+  width: 7px;
+  height: 41px;
+  background: #ffffff;
+}
+
+.child-with-bars #bar-1 {
+  position: absolute;
+}
+
+.child-with-bars #bar-2 {
+  position: absolute;
+  margin-left: 11.55px;
+}
+
+#child1 {
+  padding-left: 9px;
+}
+
+#child4 {
+  padding-right: 9px;
+}
+
+#child4 #bar-3 {
+  position: absolute;
+  bottom: 0;
+  margin-left: -18.55px;
+}
+
+#child4 #bar-4 {
+  position: absolute;
+  bottom: 0;
+  margin-left: -7px;
+}
+
+#child-2 {
+  width: 680px;
+}
+
+.grand-with-details {
+  margin-left: 66px;
+  margin-right: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.grand-with-details .grand-2-id {
+  height: 38px;
+}
+
+.grand-with-details .grand-2-rank {
+  height: 38px;
+}
+
+.grand-with-details .grand-2-number {
+  height: 38px;
+}
+
+.grand-with-details .grand-2-patname {
+  height: 38px;
+}
+
+.grand-with-details .grand-2-fees {
+  height: 38px;
+}
+
+.grand-with-details .grand-2-counter {
+  text-align: right;
+  height: 42px;
+}
+
+.grand-with-details .grand-2-counter p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2f2954;
+}
+
+.grand-with-details .grand-2-counter p input {
+  border: none;
+  background: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.grand-with-details .grand-2-counter p span {
+  font-weight: bold;
+}
+
+.grand-with-details .grand-2-drname {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 26px;
+  color: #494469;
+  margin-bottom: 20px;
+}
+
+.grand-with-details .gg-2-a-bold {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #4d6878;
+}
+
+.grand-with-details .gg-2-b-normal {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+  color: #3d3d3d;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,25 @@
+@import "./scss/extra-remove";
+@import "./scss/variable";
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.current-card-main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.curr-app-card {
+  display: flex;
+  height: auto;
+  background: #eaedfe;
+  box-shadow: 0px 40px 20px -35px rgba(154, 169, 252, 0.54);
+  border-radius: 6px;
+}
+p {
+  display: inline-block;
+}
+
+@import "./scss/child-1";
+@import "./scss/child-2";
