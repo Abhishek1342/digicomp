@@ -1,0 +1,43 @@
+.child-with-cont {
+  z-index: 3;
+  background: url("../bb.svg");
+  background-size: cover;
+  width: 309px;
+  height: 335px;
+  margin-top: -155px;
+  padding-top: 110px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .grand-2-head {
+    text-align: center;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 52px;
+    color: #6d6d6d;
+  }
+  .grand-2-cont {
+    height: 168px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .gg-2a-cont {
+      width: 260px;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 1px;
+      text-align: justify;
+      color: #898989;
+
+      background-color: white;
+      margin-bottom: 12px;
+    }
+  }
+}
