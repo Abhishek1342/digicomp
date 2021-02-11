@@ -1,7 +1,5 @@
 .searchbar {
-  width: 40%;
   position: relative;
-  padding: 1% 0;
 }
 .geoloc,
 .searchbox,
@@ -22,15 +20,15 @@
 .geoloc:after {
   content: "";
   position: absolute;
-  top: 28%;
-  left: 23%;
+  top: 9px;
+  left: 18%;
   display: inline-block;
   width: 1px;
   height: 2rem;
   background-color: rgba(62, 104, 120, 0.48);
 }
 .searchbox {
-  width: 70%;
+  width: 80%;
   height: 3rem;
   background: #ffffff;
   text-decoration: none;
@@ -51,6 +49,12 @@
   color: #fff;
   border: none;
   position: absolute;
-  top: 16%;
-  left: 85%;
+  top: 0;
+  right: 0;
+}
+
+.geoloc:focus,
+.submitbtn:focus,
+.searchbox:focus {
+  outline: none;
 }
