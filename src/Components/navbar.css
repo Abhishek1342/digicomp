@@ -6,11 +6,11 @@ nav {
   color: #fff;
   padding: 0 10%;
   display: flex;
-  flex: 1;
   justify-content: space-between;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 .brand-div {
   width: 19%;

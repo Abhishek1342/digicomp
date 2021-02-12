@@ -1,10 +1,19 @@
 .searchbar {
   position: relative;
+  width: 100%;
 }
 .geoloc,
 .searchbox,
 .submitbtn {
   box-shadow: 0 7px 5px -3px rgba(0, 0, 0, 0.07);
+}
+.searchbox {
+  width: 80%;
+  height: 3rem;
+  background: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 0 33px 33px 0;
 }
 
 .geoloc {
@@ -27,15 +36,7 @@
   height: 2rem;
   background-color: rgba(62, 104, 120, 0.48);
 }
-.searchbox {
-  width: 80%;
-  height: 3rem;
-  background: #ffffff;
-  text-decoration: none;
-  border: none;
-  /* border-left: 1px solid rgba(62, 104, 120, 0.48); */
-  border-radius: 0 33px 33px 0;
-}
+
 .fa-map-marker-alt {
   color: #dc1919;
 }
@@ -49,8 +50,8 @@
   color: #fff;
   border: none;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -1px;
+  right: -1px;
 }
 
 .geoloc:focus,
