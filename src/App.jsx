@@ -3,6 +3,9 @@ import Navbar from "./Components/Navbar";
 import PageTop from "./Components/page-top";
 import Homelanding from "./Components/home-landing";
 import Detailcard from "./Components/detail-card";
+import Login from "./Components/login";
+import ForgotPassword from "./Components/frgtpswd";
+import ChangePassword from "./Components/chngpswd";
 
 function App() {
   return (
@@ -60,6 +63,9 @@ function App() {
         commodo duis. Ea ut esse aliquip nulla occaecat anim. Enim mollit
         consequat pariatur ea.
       </h2>
+      <Login />
+      <ForgotPassword />
+      <ChangePassword />
     </div>
   );
 }

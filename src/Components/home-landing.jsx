@@ -31,7 +31,7 @@ function Homelanding() {
           <SearchBar />
         </div>
         <div className="Landing-svg">
-          <img src={LandingSvg} />
+          <img src={LandingSvg} alt="online doctor" />
         </div>
       </div>
     </div>

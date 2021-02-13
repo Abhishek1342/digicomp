@@ -1,0 +1,28 @@
+.input-field {
+  width: 100%;
+  height: 3rem;
+  text-decoration: none;
+  outline: none;
+  background: #ffffff;
+  border: 1.5px solid #1a73e8;
+  border-radius: 6px;
+  padding-left: 20px;
+}
+.input-field:focus {
+  border: 3px solid #6eabfa;
+}
+.submit {
+  background: linear-gradient(91.53deg, #752deb -23.93%, #826eea 72.14%);
+  border-radius: 6px;
+  padding-left: 0;
+  color: #fff;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  outline: none;
+  transition: all 0.1s ease;
+}
+.submit:hover {
+  background: linear-gradient(91.53deg, #752deb -23.93%, #8a74fa 72.14%);
+  font-size: 1.4rem;
+}
