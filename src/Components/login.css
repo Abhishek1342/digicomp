@@ -80,3 +80,17 @@
 .customgap {
   height: 13rem;
 }
+/* Sign up starts here */
+.extendheight {
+  height: 35rem;
+}
+.signup-gap {
+  height: 22rem;
+}
+#submit-signup {
+  background: linear-gradient(91.29deg, #752deb -2.71%, #b059ad 138.68%);
+}
+
+#submit-signup:hover {
+  background: linear-gradient(91.29deg, #752deb 0.71%, #b059ad 100.68%);
+}

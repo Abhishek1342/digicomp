@@ -6,6 +6,7 @@ import Detailcard from "./Components/detail-card";
 import Login from "./Components/login";
 import ForgotPassword from "./Components/frgtpswd";
 import ChangePassword from "./Components/chngpswd";
+import SignUp from "./Components/signup";
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
       <Login />
       <ForgotPassword />
       <ChangePassword />
+      <SignUp />
     </div>
   );
 }
