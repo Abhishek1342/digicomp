@@ -60,6 +60,7 @@
   height: 80vh;
 }
 .Landing-txt {
+  text-align: center;
   width: 36%;
   padding: 5% 0;
 }

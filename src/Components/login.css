@@ -1,0 +1,96 @@
+.popup-container {
+  min-width: 200px;
+  width: 25%;
+  height: 30rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px 4px rgba(195, 160, 255, 0.3);
+  border-radius: 15px;
+  padding: 1% 2.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.login-partner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.login-partner a {
+  width: 80px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(195, 160, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.alternative-opt-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+}
+.alternative-opt-container p {
+  margin: 0;
+}
+
+.alternative-opt-container a,
+.alternative-opt-container p a {
+  text-decoration: none;
+  color: #dc1919;
+}
+.alternative-opt-container p a {
+  color: #1a73e8;
+}
+
+.alternative-opt-container a:hover {
+  color: #f36262;
+}
+
+.alternative-opt-container p a:hover {
+  color: #63a3f7;
+}
+/* Forgot password starts here */
+.mksmll {
+  height: 15rem;
+}
+.mkgap {
+  height: 9rem;
+}
+/* Confirm password starts here */
+
+.customheight {
+  height: 20rem;
+}
+.customgap {
+  height: 13rem;
+}
+/* Sign up starts here */
+.extendheight {
+  height: 35rem;
+}
+.signup-gap {
+  height: 22rem;
+}
+#submit-signup {
+  background: linear-gradient(91.29deg, #752deb -2.71%, #b059ad 138.68%);
+}
+
+#submit-signup:hover {
+  background: linear-gradient(91.29deg, #752deb 0.71%, #b059ad 100.68%);
+}

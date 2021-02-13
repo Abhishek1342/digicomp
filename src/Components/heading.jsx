@@ -5,7 +5,7 @@ function Heading(prop) {
   return (
     <div className="title">
       <div className="line"></div>
-      <h2 className="titleName">{prop.value}</h2>
+      <h2 className="titleName">{prop.nestedvalue}</h2>
       <div className="line"></div>
     </div>
   );
