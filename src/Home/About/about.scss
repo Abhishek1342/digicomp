@@ -1,0 +1,13 @@
+@import "./scss/extra-remove";
+
+.about-main {
+  margin: 4% 0 0;
+}
+
+.about-comp-main {
+  display: flex;
+  justify-content: space-around;
+}
+
+@import "./scss/child-1";
+@import "./scss/child-2";

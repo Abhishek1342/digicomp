@@ -94,3 +94,7 @@
 #submit-signup:hover {
   background: linear-gradient(91.29deg, #752deb 0.71%, #b059ad 100.68%);
 }
+
+.pointer-cursor:hover {
+  cursor: pointer;
+}

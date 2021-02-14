@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "react-modal";
 import "./login.css";
 import { Textbox, Submit } from "./input";
 import InUp from "./inup";
+import SignUp from "./signup";
+import ForgotPassword from "./frgtpswd";
 
 function Login() {
+  const [modalSignupIsOpen, setModalSignupIsOpen] = useState(false);
+  const [modalForgetIsOpen, setModalForgetIsOpen] = useState(false);
   return (
     <div className="popup-container">
       <InUp InUpTitle="Login" />
@@ -38,10 +43,32 @@ function Login() {
         <Submit id="submit-login" value="Log in" />
       </form>
       <div className="alternative-opt-container">
-        <a href="/#">Forgot password</a>
+        <a
+          className="pointer-cursor"
+          onClick={() => setModalForgetIsOpen(true)}
+        >
+          Forgot password
+        </a>
+        <Modal
+          isOpen={modalForgetIsOpen}
+          onRequestClose={() => setModalForgetIsOpen(false)}
+        >
+          <ForgotPassword />
+        </Modal>
         <p>
           Don't have account? &nbsp;
-          <a href="/#">Sign Up</a>
+          <a
+            className="pointer-cursor"
+            onClick={() => setModalSignupIsOpen(true)}
+          >
+            Sign Up
+          </a>
+          <Modal
+            isOpen={modalSignupIsOpen}
+            onRequestClose={() => setModalSignupIsOpen(false)}
+          >
+            <SignUp />
+          </Modal>
         </p>
       </div>
     </div>

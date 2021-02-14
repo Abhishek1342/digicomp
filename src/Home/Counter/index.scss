@@ -1,0 +1,28 @@
+@import "./scss/extra-remove";
+@import "./scss/variable";
+
+.count-main::before {
+  content: "";
+  width: 100%;
+  height: 360px;
+  background: url("./images/5.jpg");
+  position: absolute;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.4;
+}
+.count-main {
+  margin-top: 4%;
+
+  height: 360px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: inset 0px 5px 9px -3px rgba(0, 0, 0, 0.48),
+    inset 0px -5px 9px -3px rgba(0, 0, 0, 0.49);
+}
+
+@import "./scss/child-1";

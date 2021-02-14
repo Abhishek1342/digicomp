@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "react-modal";
 import "./login.css";
 import { Textbox, Submit } from "./input";
 import InUp from "./inup";
+import Login from "./login";
 
 function SignUp() {
+  const [modalLoginIsOpen, setModalLoginIsOpen] = useState(false);
   return (
     <div className="popup-container extendheight">
       <InUp InUpTitle="Sign Up" />
@@ -54,7 +57,18 @@ function SignUp() {
       <div className="alternative-opt-container">
         <p>
           Already registered! &nbsp;
-          <a href="/#">Log In</a>
+          <a
+            className="pointer-cursor"
+            onClick={() => setModalLoginIsOpen(true)}
+          >
+            Log In
+          </a>
+          <Modal
+            isOpen={modalLoginIsOpen}
+            onRequestClose={() => setModalLoginIsOpen(false)}
+          >
+            <Login />
+          </Modal>
         </p>
       </div>
     </div>

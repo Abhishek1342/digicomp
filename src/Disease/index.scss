@@ -1,0 +1,28 @@
+@import "./scss/extra-remove";
+@import "./scss/variable";
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.disease-card-main {
+  padding: 4% 10% 6%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
+
+  grid-row-gap: 7%;
+  grid-column-gap: 7%;
+}
+
+.dise-card-main {
+  min-width: $main-width;
+  max-width: 90%;
+  min-height: 420px;
+  background: #ffffff;
+  border-radius: 15px;
+}
+
+@import "./scss/child-1";
+@import "./scss/child-2";
+@import "./scss/child-3";

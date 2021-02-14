@@ -1,0 +1,44 @@
+.count-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 62px;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 132px;
+    height: 132px;
+    color: green;
+    background-color: #f0f0f0;
+    font-size: 70px;
+    border-radius: 50%;
+    margin-top: -62px;
+    border-bottom: 5px solid #fff;
+  }
+  .grand-1-sqr {
+    z-index: inherit;
+    position: absolute;
+    width: 320px;
+    height: 188px;
+    background: #f0f0f0;
+    box-shadow: 4px 4px 5px 1px rgba(159, 159, 159, 0.99);
+    border-radius: 15px;
+    padding-top: 70px;
+    text-align: center;
+    .gg-a-type {
+      font-size: 27px;
+      font-weight: 700;
+      line-height: 50px;
+    }
+    .gg-a-counter {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.child-with-btn {
+  box-shadow: 0px 2px 5px rgba(106, 106, 106, 0.4);
+
+  height: 47px;
+  border-radius: 0 0 15px 15px;
+  background: rgba(116, 46, 233, 0.71);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .grand-3-btn {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.3s ease-in;
+    &:hover {
+      width: 70%;
+    }
+    a {
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease-in;
+      &:hover {
+        font-size: 18px;
+      }
+    }
+  }
+  .grand-3-divider {
+    height: 32px;
+    width: 0px;
+    border: 0.5px solid #ffffff;
+  }
+}
+.grand-3-btn:nth-child(1):hover {
+  width: 80% !important;
+}

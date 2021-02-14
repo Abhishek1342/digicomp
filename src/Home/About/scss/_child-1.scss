@@ -1,0 +1,29 @@
+.child-with-img {
+  width: 45%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .grand-image {
+    position: relative;
+    width: 320px;
+    height: 180px;
+    border: 7px solid #fff;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.32);
+    border-radius: 15px;
+  }
+  #grand-1 {
+    margin-right: 240px;
+  }
+  #grand-2,
+  #grand-4 {
+    margin-left: 200px;
+    margin-top: -105px;
+  }
+  #grand-3 {
+    margin-right: 240px;
+    margin-top: -40px;
+  }
+}

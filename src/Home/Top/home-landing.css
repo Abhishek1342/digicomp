@@ -97,3 +97,13 @@
   text-shadow: -3px -3px 10px #cecece, 3px 3px 10px #701efa;
   color: #742ee9;
 }
+.page-info {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #5a5a5a;
+}
+
+.login-signup:hover {
+  cursor: pointer;
+}
