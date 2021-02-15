@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+
 import "./home-landing.css";
 import "../../index.scss";
 import Logo from "../../Images/Logo/dclogo.png";
@@ -9,6 +10,8 @@ import LandingSvg from "../../Images/Home/landing-svg.svg";
 
 import Login from "../../Top-bar/Account/login";
 import SignUp from "../../Top-bar/Account/signup";
+
+import { modalStyle } from "../../Top-bar/modalStyle";
 
 function Homelanding() {
   const [modalLoginIsOpen, setModalLoginIsOpen] = useState(false);
@@ -33,8 +36,9 @@ function Homelanding() {
           <Modal
             isOpen={modalLoginIsOpen}
             onRequestClose={() => setModalLoginIsOpen(false)}
+            style={modalStyle}
           >
-            <Login />
+            <Login style={{ position: "relative" }} />
           </Modal>
 
           <a
@@ -46,8 +50,9 @@ function Homelanding() {
           <Modal
             isOpen={modalSignupIsOpen}
             onRequestClose={() => setModalSignupIsOpen(false)}
+            style={modalStyle}
           >
-            <SignUp />
+            <SignUp></SignUp>
           </Modal>
         </div>
       </div>

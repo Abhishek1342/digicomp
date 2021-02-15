@@ -5,6 +5,7 @@ import { Textbox, Submit } from "./input";
 import InUp from "./inup";
 import SignUp from "./signup";
 import ForgotPassword from "./frgtpswd";
+import { modalStyle } from "../modalStyle";
 
 function Login() {
   const [modalSignupIsOpen, setModalSignupIsOpen] = useState(false);
@@ -52,6 +53,7 @@ function Login() {
         <Modal
           isOpen={modalForgetIsOpen}
           onRequestClose={() => setModalForgetIsOpen(false)}
+          style={modalStyle}
         >
           <ForgotPassword />
         </Modal>
@@ -66,6 +68,7 @@ function Login() {
           <Modal
             isOpen={modalSignupIsOpen}
             onRequestClose={() => setModalSignupIsOpen(false)}
+            style={modalStyle}
           >
             <SignUp />
           </Modal>

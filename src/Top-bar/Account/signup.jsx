@@ -4,6 +4,7 @@ import "./login.css";
 import { Textbox, Submit } from "./input";
 import InUp from "./inup";
 import Login from "./login";
+import { modalStyle } from "../modalStyle";
 
 function SignUp() {
   const [modalLoginIsOpen, setModalLoginIsOpen] = useState(false);
@@ -66,6 +67,7 @@ function SignUp() {
           <Modal
             isOpen={modalLoginIsOpen}
             onRequestClose={() => setModalLoginIsOpen(false)}
+            style={modalStyle}
           >
             <Login />
           </Modal>
