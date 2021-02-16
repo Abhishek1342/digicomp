@@ -1,9 +1,9 @@
 import React from "react";
 // Account
-import ChangePassword from "./Top-bar/Account/chngpswd";
-import ForgotPassword from "./Top-bar/Account/frgtpswd";
-import Login from "./Top-bar/Account/login";
-import SignUp from "./Top-bar/Account/signup";
+// import ChangePassword from "./Top-bar/Account/chngpswd";
+// import ForgotPassword from "./Top-bar/Account/frgtpswd";
+// import Login from "./Top-bar/Account/login";
+// import SignUp from "./Top-bar/Account/signup";
 // Home-top
 import Homelanding from "./Home/Top/home-landing";
 // Counter
@@ -14,6 +14,9 @@ import Counter from "./Home/Counter/counter-component";
 // About
 import AboutComponent from "./Home/About/about-component";
 import "./Home/About/about.scss";
+
+// Member
+import Member from "./Home/Member/member";
 
 // Footer
 import FooterComponent from "./Footer/footer-component";
@@ -35,8 +38,7 @@ const HomePage = () => {
       <div className="about-main">
         <AboutComponent />
       </div>
-
-      <FooterComponent />
+      <Member />
     </body>
   );
 };

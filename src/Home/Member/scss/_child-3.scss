@@ -1,0 +1,29 @@
+.grand-with-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background: #eeeeee;
+  .child-1-name {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+  .child-1-merit {
+    display: flex;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    .typewriter {
+      font-weight: 600;
+    }
+  }
+}
+.Typewriter__wrapper {
+  font-weight: 600;
+}
