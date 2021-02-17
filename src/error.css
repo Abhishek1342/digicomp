@@ -1,0 +1,75 @@
+.error-container {
+  width: 100%;
+  height: 95vh;
+}
+.Brandus {
+  width: 43%;
+  height: 4rem;
+  padding: 0 10%;
+  margin: 2% 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.Brandus img {
+  height: 100%;
+}
+.Brandus h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #575757;
+}
+.Content-container {
+  width: 100%;
+  height: 80vh;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.gif-container {
+  height: 100%;
+}
+.gif-container img {
+  height: 100%;
+}
+/* .contnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+} */
+.Contnt h2 {
+  font-size: 9rem;
+  font-weight: 600;
+  color: #ef459e;
+}
+.Contnt h3 {
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 11rem;
+  color: #1e53ab;
+}
+.Contnt a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: #a598db;
+  margin: 10% 0;
+  padding: 4% 7%;
+  border-radius: 10px;
+  box-shadow: none;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.3s ease;
+  transition-property: box-shadow;
+}
+.Contnt a:hover {
+  box-shadow: 5px 5px 0px #ef459e;
+  color: #1e53ab;
+  transform: translate(0px, 0px);
+}
+
+.RTH-btn {
+  padding: 10% 0 0 3%;
+}

@@ -20,7 +20,7 @@ import Member from "./Member/member";
 
 const HomePage = () => {
   return (
-    <body>
+    <React.Fragment>
       <Homelanding />
 
       <Type />
@@ -34,7 +34,7 @@ const HomePage = () => {
         <AboutComponent />
       </div>
       <Member />
-    </body>
+    </React.Fragment>
   );
 };
 export default HomePage;
