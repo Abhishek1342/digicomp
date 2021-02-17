@@ -7,16 +7,18 @@ export const typeCard = [
     id: 1,
     name: "Doctors",
     img: doctorImg,
-    link: "./disease",
+    link: "./doctors",
   },
   {
     id: 2,
     name: "Speciaists",
     img: specialistImg,
+    link: "./specialists",
   },
   {
     id: 3,
     name: "Diseases",
     img: diseaseImg,
+    link: "./diseases",
   },
 ];

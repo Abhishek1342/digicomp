@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const TypeCard = ({ name, img, link }) => {
   return (
-    <Link to={link}>
+    <Link to={link} style={{ textDecoration: "none" }}>
       <div className="type-card-main">
         <div className="image-child">
           <img src={img} alt={name} />
