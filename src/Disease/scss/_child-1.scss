@@ -4,7 +4,7 @@
 
   border-radius: 15px 15px 0 0;
   background: #f3f3f3;
-  .child-with-img {
+  .child-with-img-disease {
     border-radius: 15px;
     height: 170px;
     display: flex;
@@ -27,7 +27,7 @@
       width: $back-rect;
       height: $back-rect;
       background: #cce3ff;
-      border-radius: 15px 15px 0 0;
+      border-radius: 15px;
       transform: rotate(-45deg);
     }
   }

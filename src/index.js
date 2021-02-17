@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import HomePage from "./app";
+import Routing from "./app";
 
-const Home = () => {
-  return <HomePage />;
+const Digicomp = () => {
+  return <Routing />;
 };
 
-ReactDOM.render(<Home />, document.getElementById("root"));
+ReactDOM.render(<Digicomp />, document.getElementById("root"));

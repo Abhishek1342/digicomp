@@ -1,45 +1,24 @@
 import React from "react";
-// Account
-// import ChangePassword from "./Top-bar/Account/chngpswd";
-// import ForgotPassword from "./Top-bar/Account/frgtpswd";
-// import Login from "./Top-bar/Account/login";
-// import SignUp from "./Top-bar/Account/signup";
-// Home-top
-import Homelanding from "./Home/Top/home-landing";
-// Counter
-import "./Home/Counter/index.scss";
-import { counterList } from "./Home/Counter/counter-content";
-import Counter from "./Home/Counter/counter-component";
+import Home from "./Home/index";
+import Disease from "./Disease/index";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-// About
-import AboutComponent from "./Home/About/about-component";
-import "./Home/About/about.scss";
-
-// Member
-import Member from "./Home/Member/member";
-
-// Footer
-import FooterComponent from "./Footer/footer-component";
-import "./Footer/footer.css";
-
-const HomePage = () => {
+const Routing = () => {
   return (
-    <body>
-      <Homelanding />
-      {/* <ChangePassword />
-      <ForgotPassword />
-      <Login />
-      <SignUp /> */}
-      <div className="count-main">
-        {counterList.map((cards) => {
-          return <Counter key={cards.id} {...cards}></Counter>;
-        })}
-      </div>
-      <div className="about-main">
-        <AboutComponent />
-      </div>
-      <Member />
-    </body>
+    <React.Fragment>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/disease" exact component={Disease} />
+          {/* 
+          <Route path="/doctors" exact component={} />
+          <Route path="/specialists" exact component={} />
+          <Route path="/profile" exact component={} />
+          <Route path="*" exact component={} /> */}
+        </Switch>
+      </Router>
+    </React.Fragment>
   );
 };
-export default HomePage;
+
+export default Routing;

@@ -1,8 +1,9 @@
-.heading {
+.heading-home {
   display: flex;
   justify-content: center;
   align-items: center;
-  .title {
+
+  .title-home {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -10,7 +11,7 @@
     color: #742ee9;
     padding: 0 10px;
   }
-  .dash {
+  .dash-home {
     width: 42px;
     height: 0px;
     border: 2.1px solid #742ee9;

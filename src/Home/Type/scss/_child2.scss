@@ -1,0 +1,15 @@
+.name-child {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eeeeee;
+  border-radius: 0 0 6px 6px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+  transition: all 0.3s ease-in;
+  .fas {
+    margin-top: 2px;
+  }
+}

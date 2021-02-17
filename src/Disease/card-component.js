@@ -4,7 +4,7 @@ const DiseaseCard = ({ img, title, description }) => {
   return (
     <div className="dise-card-main">
       <div className="child-1">
-        <div className="child-with-img">
+        <div className="child-with-img-disease">
           <div className="grand-1-img">
             <img src={img} alt="Tuberculosis" />
           </div>

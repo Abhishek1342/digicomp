@@ -6,4 +6,4 @@ const Disease = () => {
   return <DiseasePage />;
 };
 
-ReactDOM.render(<Disease />, document.getElementById("root"));
+export default Disease;
