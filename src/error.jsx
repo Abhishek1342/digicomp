@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./error.css";
 import Logo from "./Images/Logo/dclogo.png";
 import Robo from "./Images/error/robot404.gif";
@@ -14,9 +15,9 @@ function Error() {
         <div className="Contnt">
           <h2>404</h2>
           <h3>Error !</h3>
-          <div className="RTH-btn">
-            <a href="/404">Return to home</a>
-          </div>
+          <Link className="link-404" to="/">
+            <a>Return to home</a>
+          </Link>
         </div>
         <div className="gif-container">
           <img src={Robo} />

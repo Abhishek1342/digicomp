@@ -17,7 +17,7 @@ const Routing = () => {
           <Route path="/specialists" exact component={} />
           <Route path="/profile" exact component={} />
           <Route path="*" exact component={} /> */}
-          <Route path="/404" exact component={Error} />
+          <Route path="*" exact component={Error} />
         </Switch>
       </Router>
     </React.Fragment>

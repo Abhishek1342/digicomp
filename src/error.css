@@ -51,7 +51,7 @@
   line-height: 11rem;
   color: #1e53ab;
 }
-.Contnt a {
+.link-404 a {
   text-decoration: none;
   font-size: 1.5rem;
   background-color: #a598db;
@@ -64,12 +64,12 @@
   transition: 0.3s ease;
   transition-property: box-shadow;
 }
-.Contnt a:hover {
+.link-404 a:hover {
   box-shadow: 5px 5px 0px #ef459e;
   color: #1e53ab;
   transform: translate(0px, 0px);
 }
 
-.RTH-btn {
-  padding: 10% 0 0 3%;
+.link-404 {
+  text-decoration: none;
 }
