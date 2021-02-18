@@ -1,0 +1,32 @@
+.quick-links-footer,
+.contact-footer,
+.policies-footer {
+  width: 100%;
+  border-left: 1px solid white;
+  .grand-2-foot-head {
+    color: white;
+    text-align: center;
+  }
+  .grand-2-foot-list {
+    list-style: none;
+    padding-left: 17%;
+    padding-top: 14px;
+    .grand-2-foot-link {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+      transition: all 0.2s ease;
+      &:hover {
+        color: #b6bec5;
+      }
+      li {
+        font-size: 18px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+    }
+  }
+}

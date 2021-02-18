@@ -18,6 +18,9 @@ import "./About/about.scss";
 // Member
 import Member from "./Member/member";
 
+// Footer
+import Footer from "../Footer/footer";
+
 const HomePage = () => {
   return (
     <React.Fragment>
@@ -34,6 +37,7 @@ const HomePage = () => {
         <AboutComponent />
       </div>
       <Member />
+      <Footer />
     </React.Fragment>
   );
 };

@@ -1,0 +1,21 @@
+@import "./scss/extra-remove";
+@import "./scss/variable";
+
+.footer-part-1 {
+  padding: 2% 7% 1%;
+  background: #596876;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+.footer-part-2 {
+  background: #1c1a2a;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+@import "./scss/child1";
+@import "./scss/child2";
+@import "./scss/child3";
+@import "./scss/child-a";
