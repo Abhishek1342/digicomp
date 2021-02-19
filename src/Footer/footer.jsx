@@ -77,7 +77,7 @@ const Footer = () => {
       </div>
       <div className="footer-part-2">
         <Link className="grand-a-foot-link">
-          <h2>Credits and Copyright</h2>
+          <p>Credits and Copyright</p>
           &nbsp;&nbsp;
           <i class="far fa-copyright"></i>{" "}
         </Link>

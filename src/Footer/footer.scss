@@ -2,10 +2,11 @@
 @import "./scss/variable";
 
 .footer-part-1 {
-  padding: 2% 7% 1%;
+  padding: 2% 7%;
   background: #596876;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-row-gap: 2rem;
   justify-items: center;
 }
 .footer-part-2 {
@@ -19,3 +20,4 @@
 @import "./scss/child2";
 @import "./scss/child3";
 @import "./scss/child-a";
+@import "./scss/media";

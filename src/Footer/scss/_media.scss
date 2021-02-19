@@ -1,0 +1,49 @@
+@media all and (max-width: 1300px) {
+  .quick-links-footer .grand-2-foot-head,
+  .contact-footer .grand-2-foot-head,
+  .policies-footer .grand-2-foot-head {
+    padding-left: 10%;
+  }
+  .quick-links-footer .grand-2-foot-list,
+  .contact-footer .grand-2-foot-list,
+  .policies-footer .grand-2-foot-list {
+    padding-left: 10%;
+  }
+}
+
+@media all and (max-width: 1150px) {
+  .footer-part-1 {
+    padding-left: 16%;
+    padding-right: 16%;
+    grid-column-gap: 5%;
+  }
+  .contact-footer {
+    border-left: none;
+  }
+  .grand-3-foot-social {
+    margin-top: 8px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .footer-part-1 {
+    padding: 5% 3% 2%;
+
+    grid-column-gap: 0%;
+  }
+  .grand-a-foot-link p {
+    font-size: 18px;
+  }
+  .grand-a-foot-link i {
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .quick-links-footer {
+    border-left: none;
+  }
+  .policies-footer {
+    border-left: none;
+  }
+}
