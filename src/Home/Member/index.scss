@@ -9,14 +9,15 @@
 .member-card {
   padding-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   justify-items: center;
-  grid-column-gap: 4em;
+  grid-column-gap: 3%;
+  grid-row-gap: 2rem;
 }
 
 .member-card-main {
   width: 100%;
-  height: 320px;
+  height: auto;
   border: 1px solid #8a8a8a;
   border-radius: 4px;
   display: flex;
@@ -37,3 +38,4 @@
 @import "./scss/child-1";
 @import "./scss/child-2";
 @import "./scss/child-3";
+@import "./scss/media";

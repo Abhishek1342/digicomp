@@ -1,0 +1,15 @@
+@media only screen and (max-width: 1300px) {
+  .member-main {
+    padding-left: 17%;
+    padding-right: 17%;
+  }
+  .member-card {
+    grid-column-gap: 10%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .member-main {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
