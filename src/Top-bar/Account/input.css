@@ -26,3 +26,15 @@
   background: linear-gradient(91.53deg, #752deb -23.93%, #8a74fa 72.14%);
   font-size: 1.4rem;
 }
+.pwd-eye {
+  display: inline-block;
+  position: relative;
+  height: 0;
+}
+.pwd-eye i {
+  position: relative;
+  top: -68px;
+  left: 86%;
+  cursor: pointer;
+  padding: 1rem 0.8rem;
+}

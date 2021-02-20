@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import "./login.css";
-import { Textbox, Submit } from "./input";
+import { Textbox, PwdField, Submit } from "./input";
 import InUp from "./inup";
 import SignUp from "./signup";
 import ForgotPassword from "./frgtpswd";
@@ -35,11 +35,7 @@ function Login() {
       </div>
       <form className="form-container">
         <Textbox type="Text" id="username-login" placeholder="Enter username" />
-        <Textbox
-          type="Password"
-          id="password-login"
-          placeholder="Enter Password"
-        />
+        <PwdField id="password-login" placeholder="Enter Password" />
         {/* <TnC id="trmncond" value="agree with Terms and Conditions" /> */}
         <Submit id="submit-login" value="Log in" />
       </form>

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import "./login.css";
-import { Textbox, Submit } from "./input";
+import { Textbox, PwdField, Submit } from "./input";
 import InUp from "./inup";
 import Login from "./login";
 import { modalStyle } from "../modalStyle";
+import "./login.css";
 
 function SignUp() {
   const [modalLoginIsOpen, setModalLoginIsOpen] = useState(false);
@@ -43,16 +43,8 @@ function SignUp() {
           placeholder="Enter Phone Number"
         />
         <Textbox type="Email" id="Email-Signup" placeholder="Enter Email" />
-        <Textbox
-          type="password"
-          id="Password-signup"
-          placeholder="Enter Password"
-        />
-        <Textbox
-          type="Password"
-          id="cnf-password-signup"
-          placeholder="Confirm Password"
-        />
+        <PwdField id="Password-signup" placeholder="Enter Password" />
+        <PwdField id="cnf-password-signup" placeholder="Confirm Password" />
         <Submit id="submit-signup" value="Sign Up" />
       </form>
       <div className="alternative-opt-container">

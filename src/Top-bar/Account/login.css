@@ -98,3 +98,10 @@
 .pointer-cursor:hover {
   cursor: pointer;
 }
+.eyes {
+  position: relative;
+  top: -56px;
+  left: 86%;
+  cursor: pointer;
+  padding: 1rem 0.8rem;
+}
