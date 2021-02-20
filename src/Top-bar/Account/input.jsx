@@ -27,17 +27,16 @@ function PwdField(props) {
   }
 
   return (
-    <React.Fragment>
+    <div className="password-area">
       <input
         className="input-field"
         type={cngpwd}
         id={props.id}
         placeholder={props.placeholder}
       />
-      <span className="pwd-eye">
-        <i class={cngimg} onClick={showpwd}></i>
-      </span>
-    </React.Fragment>
+
+      <i class={cngimg} onClick={showpwd}></i>
+    </div>
   );
 }
 

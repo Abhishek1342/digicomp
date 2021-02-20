@@ -1,5 +1,5 @@
 .input-field {
-  width: 100%;
+  width: 308px;
   height: 3rem;
   text-decoration: none;
   outline: none;
@@ -26,7 +26,7 @@
   background: linear-gradient(91.53deg, #752deb -23.93%, #8a74fa 72.14%);
   font-size: 1.4rem;
 }
-.pwd-eye {
+/* .pwd-eye {
   display: inline-block;
   position: relative;
   height: 0;
@@ -37,4 +37,7 @@
   left: 86%;
   cursor: pointer;
   padding: 1rem 0.8rem;
+} */
+.password-area {
+  display: flex;
 }

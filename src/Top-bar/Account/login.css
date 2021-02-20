@@ -99,9 +99,7 @@
   cursor: pointer;
 }
 .eyes {
-  position: relative;
-  top: -56px;
-  left: 86%;
-  cursor: pointer;
-  padding: 1rem 0.8rem;
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: 17rem;
 }
