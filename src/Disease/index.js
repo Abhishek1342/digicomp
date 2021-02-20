@@ -1,8 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { useEffect } from "react";
+
 import DiseasePage from "./app";
 
 const Disease = () => {
+  useEffect(() => {
+    document.title = `Disease`;
+  });
   return <DiseasePage />;
 };
 

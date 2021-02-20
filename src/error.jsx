@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./error.css";
 import Logo from "./Images/Logo/dclogo.png";
 import Robo from "./Images/error/robot404.gif";
 
 function Error() {
+  useEffect(() => {
+    document.title = `Error`;
+  });
   return (
     <div className="error-container">
       <div className="Brandus">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../Images/Logo/logo64X64.png";
 import "./navbar.css";
 
@@ -7,10 +8,10 @@ function Navbar() {
     <nav>
       <div className="brand-div">
         <div className="brnding">
-          <a href="/#">
+          <Link to="/">
             <img src={Logo} alt="logo" />
             <h1> DIGICOMP</h1>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="navitm">
