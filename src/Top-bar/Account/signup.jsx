@@ -57,6 +57,7 @@ function SignUp() {
             Log In
           </a>
           <Modal
+            closeTimeoutMS={500}
             isOpen={modalLoginIsOpen}
             onRequestClose={() => setModalLoginIsOpen(false)}
             style={modalStyle}
