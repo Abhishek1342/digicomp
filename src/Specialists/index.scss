@@ -1,0 +1,47 @@
+@import "./scss/extra-remove";
+@import "./scss/variable";
+
+.spec-card-main {
+  // z-index: -100;
+  padding-top: 10px;
+  width: $main-width;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+
+  border-radius: 15px;
+
+  &:hover .child-1 {
+    transform: translateY(-30px);
+
+    .child-with-img {
+      .grand-1-img {
+        img {
+          width: 170px;
+          height: 170px;
+        }
+      }
+      .grand-1-back {
+        width: 155px;
+        height: 155px;
+        transform: rotate(45deg);
+        margin-top: 7px;
+      }
+    }
+  }
+  .card-back {
+    z-index: -222;
+    position: absolute;
+    width: 300px;
+    height: 410.06px;
+    clip-path: polygon(50% 0%, 100% 32%, 100% 100%, 0 100%, 0% 32%);
+    background: #dbdbdb;
+    margin-top: -125px;
+  }
+}
+
+@import "./scss/child-1";
+@import "./scss/child-2";
+@import "./scss/child-3";
