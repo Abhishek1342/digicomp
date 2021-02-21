@@ -1,0 +1,67 @@
+.child-doctor-with-content {
+  z-index: 1;
+  position: absolute;
+  width: $doctor-card-content;
+  margin-left: 317px;
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-right: 100px;
+  transition: all 0.4s ease;
+  p {
+    font-style: normal;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    line-height: 30px;
+    transition: all 0.4s ease;
+  }
+  .grand-doctor-3-degree {
+    font-weight: bolder;
+    color: rgb(24, 165, 201);
+    text-transform: uppercase;
+  }
+  .grand-doctor-3-address {
+    color: #ad6d3d;
+    text-transform: uppercase;
+  }
+  .grand-doctor-3-phone {
+    text-transform: capitalize;
+  }
+  .grand-doctor-3-fees {
+    text-transform: capitalize;
+  }
+  .grand-doctor-3-rating {
+    display: flex;
+    .star-rating {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .number-of-rating {
+      font-weight: bold;
+      padding-top: 3px;
+      margin-left: 10px;
+    }
+  }
+}
+.star-doctor-card {
+  font-size: 27px;
+  margin-right: 7px;
+  transition: all 0.4s ease;
+}
+
+@media all and (max-width: 1150px) {
+  .child-doctor-with-content {
+    width: 610px;
+    margin-left: 240px;
+    p {
+      font-style: normal;
+      font-size: 16px;
+      margin-bottom: 11px;
+      line-height: 24px;
+    }
+  }
+  .star-doctor-card {
+    font-size: 24px;
+    margin-right: 5px;
+  }
+}

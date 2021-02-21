@@ -1,0 +1,9 @@
+.child-doctor-with-space {
+  width: $doctor-card-space;
+}
+
+@media all and (max-width: 1150px) {
+  .child-doctor-with-space {
+    width: 650px;
+  }
+}

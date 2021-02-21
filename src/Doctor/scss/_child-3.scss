@@ -1,0 +1,62 @@
+.child-doctor-with-button {
+  z-index: 3;
+  position: relative;
+  width: 271px;
+  height: 64px;
+  background: #943aff;
+  border-radius: 50px 0px 0px 50px;
+  right: 0;
+  top: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.4s ease;
+  .grand-doctor-3-button {
+    a {
+      color: #ffffff;
+      font-weight: bolder;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .gg-doctor-3a-circle {
+        width: 29px;
+        height: 29px;
+        border-radius: 50%;
+        background: #ffffff;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &:hover {
+    width: 380px;
+    font-size: 22px;
+  }
+}
+
+@media all and (max-width: 1150px) {
+  .child-doctor-with-button {
+    top: 180px;
+    width: 250px;
+    height: 55px;
+    .grand-doctor-3-button {
+      a {
+        font-size: 14px;
+        line-height: 55px;
+        .gg-doctor-3a-circle {
+          width: 25px;
+          height: 25px;
+        }
+        transition: all 0.4s ease;
+        &:hover {
+          font-size: 20px;
+        }
+      }
+    }
+    &:hover {
+      width: 350px;
+    }
+  }
+}

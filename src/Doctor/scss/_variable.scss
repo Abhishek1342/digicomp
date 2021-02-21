@@ -1,0 +1,10 @@
+$doctor-card-width: 1062px;
+$doctor-card-image: 317px;
+$doctor-card-content: ($doctor-card-width)- ($doctor-card-image);
+$doctor-card-space: 831px;
+
+// @media all and (max-width: 1150px) {
+//   $doctor-card-width: 850px;
+//   $doctor-card-image: 240px;
+//   $doctor-card-space: 650px;
+// }
