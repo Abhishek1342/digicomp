@@ -60,3 +60,103 @@
     }
   }
 }
+
+@media all and (max-width: 930px) {
+  .child-doctor-with-button {
+    top: 140px;
+    width: 230px;
+    height: 45px;
+    .grand-doctor-3-button {
+      a {
+        font-size: 11px;
+        line-height: 50px;
+        .gg-doctor-3a-circle {
+          width: 18px;
+          height: 18px;
+        }
+        transition: all 0.4s ease;
+        &:hover {
+          font-size: 17px;
+        }
+      }
+    }
+    &:hover {
+      width: 320px;
+    }
+  }
+}
+
+@media all and (max-width: 650px) {
+  .child-doctor-with-button {
+    top: 125px;
+    width: 210px;
+    height: 32px;
+    .grand-doctor-3-button {
+      a {
+        font-size: 8px;
+        line-height: 30px;
+        .gg-doctor-3a-circle {
+          width: 14px;
+          height: 14px;
+        }
+        transition: all 0.4s ease;
+        &:hover {
+          font-size: 11px;
+        }
+      }
+    }
+    &:hover {
+      width: 270px;
+    }
+  }
+}
+
+@media all and (max-width: 450px) {
+  .child-doctor-with-button {
+    top: 90px;
+    width: 200px;
+    height: 25px;
+    .grand-doctor-3-button {
+      a {
+        font-size: 7px;
+        line-height: 30px;
+        .gg-doctor-3a-circle {
+          width: 12px;
+          height: 12px;
+        }
+        transition: all 0.4s ease;
+        &:hover {
+          font-size: 9px;
+        }
+      }
+    }
+    &:hover {
+      width: 240px;
+    }
+  }
+}
+
+@media all and (max-width: 350px) {
+  .child-doctor-with-button {
+    top: 85px;
+    width: 200px;
+    height: 23px;
+    .grand-doctor-3-button {
+      a {
+        font-size: 6px;
+        line-height: 30px;
+        .gg-doctor-3a-circle {
+          width: 11px;
+          height: 11px;
+        }
+        transition: all 0.4s ease;
+        &:hover {
+          font-size: 8px;
+        }
+      }
+    }
+    &:hover {
+      width: 250px;
+    }
+  }
+}

@@ -41,11 +41,7 @@ const DoctorCard = ({
         <p className="grand-doctor-3-phone">Phone : {phone}</p>
         <p className="grand-doctor-3-fee">
           Fees :{" "}
-          <i
-            class="fas fa-rupee-sign"
-            aria-hidden="true"
-            style={{ fontSize: "17px" }}
-          ></i>
+          <i class="fas fa-rupee-sign rupee-doctor-card" aria-hidden="true"></i>
           &nbsp;{fees}
         </p>
         <div className="grand-doctor-3-rating">

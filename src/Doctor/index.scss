@@ -24,6 +24,27 @@
   }
 }
 
+@media all and (max-width: 930px) {
+  .doctor-card-main {
+    width: 600px;
+  }
+}
+@media all and (max-width: 650px) {
+  .doctor-card-main {
+    width: 400px;
+  }
+}
+@media all and (max-width: 450px) {
+  .doctor-card-main {
+    width: 300px;
+  }
+}
+@media all and (max-width: 350px) {
+  .doctor-card-main {
+    width: 260px;
+  }
+}
+
 @import "./scss/child-1";
 @import "./scss/child-2";
 @import "./scss/child-3";

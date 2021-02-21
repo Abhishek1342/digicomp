@@ -7,3 +7,23 @@
     width: 650px;
   }
 }
+@media all and (max-width: 930px) {
+  .child-doctor-with-space {
+    width: 480px;
+  }
+}
+@media all and (max-width: 650px) {
+  .child-doctor-with-space {
+    width: 360px;
+  }
+}
+@media all and (max-width: 450px) {
+  .child-doctor-with-space {
+    width: 300px;
+  }
+}
+@media all and (max-width: 350px) {
+  .child-doctor-with-space {
+    width: 270px;
+  }
+}
