@@ -3,37 +3,37 @@ import React from "react";
 const SpecialistCard = ({ img, title, description }) => {
   return (
     <div className="spec-card-main">
-      <div className="card-back"></div>
-      <div className="child-1">
-        <div className="child-with-img">
-          <div className="grand-1-img">
+      <div className="card-specialist-back"></div>
+      <div className="child-specialist-1">
+        <div className="child-specialist-with-img">
+          <div className="grand-specialist-1-img">
             <img src={img} alt="Tuberculosis" />
           </div>
-          <div className="grand-1-back"></div>
+          <div className="grand-specialist-1-back"></div>
         </div>
 
-        <div className="grand-1-bar"></div>
+        <div className="grand-specialist-1-bar"></div>
       </div>
 
-      <div className="child-2 child-with-cont">
-        <div className="grand-2-head">{title}</div>
-        <div className="grand-2-cont">
-          <div className="gg-2a-cont">{description}</div>
+      <div className="child-specialist-2 child-specialist-with-cont">
+        <div className="grand-specialist-2-head">{title}</div>
+        <div className="grand-specialist-2-cont">
+          <div className="gg-specialist-2a-cont">{description}</div>
         </div>
       </div>
 
-      <div className="child-3 child-with-btn">
-        <div className="grand-3-btn">
+      <div className="child-specialist-3 child-specialist-with-btn">
+        <div className="grand-specialist-3-btn">
           <a href="" target="_blank">
             Related Doctors{" "}
-            <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <i className="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
           </a>
         </div>
-        <div className="grand-3-divider"></div>
-        <div className="grand-3-btn">
+        <div className="grand-specialist-3-divider"></div>
+        <div className="grand-specialist-3-btn">
           <a href="" target="_blank">
             Know More{" "}
-            <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <i className="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
           </a>
         </div>
       </div>
