@@ -34,6 +34,7 @@ function Homelanding() {
           </a>
 
           <Modal
+            closeTimeoutMS={500}
             isOpen={modalLoginIsOpen}
             onRequestClose={() => setModalLoginIsOpen(false)}
             style={modalStyle}
@@ -48,6 +49,7 @@ function Homelanding() {
             Sign Up
           </a>
           <Modal
+            closeTimeoutMS={500}
             isOpen={modalSignupIsOpen}
             onRequestClose={() => setModalSignupIsOpen(false)}
             style={modalStyle}

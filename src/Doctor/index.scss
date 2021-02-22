@@ -1,0 +1,51 @@
+@import "./scss/extra-remove";
+@import "./scss/variable";
+
+.doct-card-main {
+  margin: 4%;
+  display: grid;
+  justify-items: center;
+}
+
+.doctor-card-main {
+  width: $doctor-card-width;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(52, 52, 52, 0.21);
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 50px;
+  transition: all 0.4s ease;
+}
+
+@media all and (max-width: 1150px) {
+  .doctor-card-main {
+    width: 850px;
+  }
+}
+
+@media all and (max-width: 930px) {
+  .doctor-card-main {
+    width: 600px;
+  }
+}
+@media all and (max-width: 650px) {
+  .doctor-card-main {
+    width: 400px;
+  }
+}
+@media all and (max-width: 450px) {
+  .doctor-card-main {
+    width: 300px;
+  }
+}
+@media all and (max-width: 350px) {
+  .doctor-card-main {
+    width: 260px;
+  }
+}
+
+@import "./scss/child-1";
+@import "./scss/child-2";
+@import "./scss/child-3";
+@import "./scss/child-4";

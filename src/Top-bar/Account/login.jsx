@@ -47,6 +47,7 @@ function Login() {
           Forgot password
         </a>
         <Modal
+          closeTimeoutMS={500}
           isOpen={modalForgetIsOpen}
           onRequestClose={() => setModalForgetIsOpen(false)}
           style={modalStyle}
@@ -62,6 +63,7 @@ function Login() {
             Sign Up
           </a>
           <Modal
+            closeTimeoutMS={500}
             isOpen={modalSignupIsOpen}
             onRequestClose={() => setModalSignupIsOpen(false)}
             style={modalStyle}

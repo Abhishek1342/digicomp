@@ -1,0 +1,126 @@
+@import "./scss/extra-remove";
+@import "./scss/variable";
+
+.specialist-card-main {
+  margin: 4% 7%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 4%;
+  grid-row-gap: 5%;
+  justify-items: center;
+}
+
+.spec-card-main {
+  padding-top: 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+
+  border-radius: 15px;
+
+  &:hover .child-specialist-1 {
+    transform: translateY(-30px);
+
+    .child-specialist-with-img {
+      .grand-specialist-1-img {
+        img {
+          width: 170px;
+          height: 170px;
+        }
+      }
+      .grand-specialist-1-back {
+        width: 155px;
+        height: 155px;
+        transform: rotate(45deg);
+        margin-top: 7px;
+      }
+    }
+  }
+  .card-specialist-back {
+    z-index: -10;
+    position: absolute;
+    width: 23.5%;
+    height: 410.06px;
+    clip-path: polygon(50% 0%, 100% 32%, 100% 100%, 0 100%, 0% 32%);
+    background: #dbdbdb;
+    margin-top: -125px;
+  }
+}
+
+@media all and (max-width: 1250px) {
+  .specialist-card-main {
+    margin: 4% 8%;
+    grid-column-gap: 8%;
+  }
+  .spec-card-main {
+    .card-specialist-back {
+      width: 34.5%;
+    }
+  }
+}
+@media all and (max-width: 820px) {
+  .specialist-card-main {
+    margin: 4% 10%;
+    grid-column-gap: 10%;
+  }
+  .spec-card-main {
+    .card-specialist-back {
+      width: 71.5%;
+    }
+  }
+}
+
+@media all and (max-width: 1250px) and (min-width: 1000px) {
+  .spec-card-main {
+    .card-specialist-back {
+      height: 450px;
+    }
+  }
+}
+
+@media all and (max-width: 820px) and (min-width: 750px) {
+  .specialist-card-main {
+    margin: 10% 15% 4%;
+    grid-column-gap: 10%;
+  }
+  .spec-card-main {
+    .card-specialist-back {
+      height: 420px;
+      width: 62.3%;
+      margin-top: -215px;
+    }
+  }
+}
+@media all and (max-width: 750px) and (min-width: 680px) {
+  .specialist-card-main {
+    margin: 10% 15% 4%;
+    grid-column-gap: 10%;
+  }
+  .spec-card-main {
+    .card-specialist-back {
+      height: 420px;
+      width: 62.3%;
+      margin-top: -170px;
+    }
+  }
+}
+@media all and (max-width: 680px) and (min-width: 600px) {
+  .specialist-card-main {
+    margin: 8% 15% 4%;
+    grid-column-gap: 10%;
+  }
+  .spec-card-main {
+    .card-specialist-back {
+      height: 420px;
+      width: 62.3%;
+      margin-top: -153px;
+    }
+  }
+}
+
+@import "./scss/child-1";
+@import "./scss/child-2";
+@import "./scss/child-3";
