@@ -19,7 +19,7 @@ function PwdField(props) {
   function showpwd() {
     if (cngpwd === "password") {
       setcngpwd("text");
-      setcngimg("fas fa-eye-slash  eyes");
+      setcngimg("far fa-eye-slash  eyes");
     } else {
       setcngpwd("password");
       setcngimg("far fa-eye eyes");
