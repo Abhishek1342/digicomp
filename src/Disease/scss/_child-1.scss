@@ -1,17 +1,17 @@
 @import "./variable";
-.child-1 {
+.child-disease-1 {
   box-shadow: 0px -1px 3px rgba(106, 106, 106, 0.4);
 
   border-radius: 15px 15px 0 0;
   background: #f3f3f3;
-  .child-with-img-disease {
+  .child-disease-with-img-disease {
     border-radius: 15px;
     height: 170px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .grand-1-img {
+    .grand-disease-1-img {
       z-index: 2;
       position: absolute;
       img {
@@ -21,7 +21,7 @@
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
       }
     }
-    .grand-1-back {
+    .grand-disease-1-back {
       z-index: 1;
       position: absolute;
       width: $back-rect;
@@ -31,8 +31,8 @@
       transform: rotate(-45deg);
     }
   }
-  // .child-with-bars {
-  .grand-1-bar {
+  // .child-disease-with-bars {
+  .grand-disease-1-bar {
     background: #ff73b5;
   }
   #left-bar {
