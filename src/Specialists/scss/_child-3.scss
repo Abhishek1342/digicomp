@@ -1,9 +1,7 @@
 @import "./variable";
 
 .child-specialist-with-btn {
-  // width: $main-width;
-  width: 100%;
-
+  width: ($main-width)+4px;
   position: relative;
   height: 47px;
   border-radius: 0 0 15px 15px;
@@ -25,8 +23,8 @@
       font-size: 12px;
       font-weight: bold;
       color: white;
-      transition: all 0.3s ease-in;
       text-decoration: none;
+      transition: all 0.3s ease-in;
       &:hover {
         text-decoration: none;
         font-size: 16px;
