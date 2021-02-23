@@ -1,14 +1,11 @@
 @import "./scss/extra-remove";
 @import "./scss/variable";
-body {
-  font-family: "Montserrat", sans-serif;
-}
 
 .disease-card-main {
   padding: 4% 10% 6%;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   justify-items: center;
 
   grid-row-gap: 7%;
@@ -26,3 +23,66 @@ body {
 @import "./scss/child-1";
 @import "./scss/child-2";
 @import "./scss/child-3";
+
+@media all and (max-width: 1310px) {
+  .disease-card-main {
+    grid-row-gap: 4%;
+  }
+}
+@media all and (max-width: 650px) {
+  .disease-card-main {
+    grid-row-gap: 2%;
+  }
+}
+
+@media all and (max-width: 1310px) and (min-width: 1000px) {
+  .disease-card-main {
+    padding: 4% 12% 6%;
+    grid-column-gap: 9%;
+  }
+}
+@media all and (max-width: 810px) and (min-width: 700px) {
+  .disease-card-main {
+    padding: 4% 5% 6%;
+    grid-column-gap: 5%;
+  }
+}
+@media all and (max-width: 700px) and (min-width: 650px) {
+  .disease-card-main {
+    padding: 4% 3% 6%;
+    grid-column-gap: 3%;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .disease-card-main {
+    padding: 4% 15% 6%;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .disease-card-main {
+    padding: 4% 0% 6%;
+  }
+  .dise-card-main {
+    min-width: 270px;
+  }
+  .child-disease-with-btn {
+    .grand-disease-3-btn {
+      &:hover {
+        width: 55%;
+      }
+      a {
+        font-size: 10px;
+        &:hover {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 300px) {
+  .dise-card-main {
+    min-width: 250px;
+  }
+}
