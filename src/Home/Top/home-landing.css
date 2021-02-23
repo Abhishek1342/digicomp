@@ -10,23 +10,21 @@
   width: 100%;
   z-index: -1;
 }
-.Landing-nav {
-  width: 100%;
-  height: 100%;
-  padding: 2% 10%;
-}
+
 .home-logo {
   border: 5px solid white;
   border-radius: 50%;
+  height: 100%;
 }
 .Landing-nav {
   width: 100%;
   height: 9.3rem;
+  padding: 2% 10%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .nav-lnks {
-  width: 20%;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -36,8 +34,8 @@
 .nav-lnks a {
   display: inline-block;
   background: #b2bbed;
-  width: 100px;
-  padding: 0.4rem 0;
+  width: 120px;
+  padding: 0.4rem 0.3rem;
   margin: 0 7%;
   text-decoration: none;
   color: #525252;
@@ -65,12 +63,10 @@
   padding: 5% 0;
 }
 .Landing-txt h1,
-.Landing-txt h3 {
+.page-info {
   padding: 0 0 10% 0;
 }
-.Landing-txt h3 {
-  text-align: center;
-}
+
 .Landing-svg {
   transform: translateX(80px);
   width: 60%;
@@ -99,14 +95,32 @@
 }
 .page-info {
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 17px;
   font-weight: 600;
   color: #5a5a5a;
+  text-align: center;
 }
 
 .login-signup:hover {
   cursor: pointer;
 }
+@media only screen and (max-width: 1150px) {
+  .home-logo {
+    height: 75%;
+  }
+  .Landing-txt {
+    padding: 2% 0;
+  }
+  .nav-lnks a {
+    width: 90px;
+    font-size: 12px;
+  }
+  .Brnd {
+    font-size: 58px;
+  }
+  .page-info {
+    font-size: 13px !important;
+  }
 .ReactModal__Overlay {
   opacity: 0;
   transform: translateY(-500px);

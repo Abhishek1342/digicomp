@@ -1,10 +1,10 @@
 import React, { useState } from "react";
+import "./login.css";
 import Modal from "react-modal";
 import { Textbox, PwdField, Submit } from "./input";
 import InUp from "./inup";
 import Login from "./login";
 import { modalStyle } from "../modalStyle";
-import "./login.css";
 
 function SignUp() {
   const [modalLoginIsOpen, setModalLoginIsOpen] = useState(false);
