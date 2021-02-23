@@ -1,0 +1,92 @@
+.searchbar {
+  max-width: 450px;
+}
+
+@media all and (max-width: 1050px) {
+  .searchbox {
+    height: 2.8rem;
+  }
+  .geoloc {
+    top: 8px;
+    height: 2.8rem;
+  }
+  .geoloc:after {
+    height: 1.9rem;
+  }
+  .submitbtn {
+    width: 2.9rem;
+    height: 2.9rem;
+  }
+}
+@media all and (max-width: 830px) {
+  .searchbox {
+    height: 2.7rem;
+  }
+  .geoloc {
+    height: 2.7rem;
+  }
+  .submitbtn {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+@media all and (max-width: 690px) {
+  .searchbox {
+    height: 2.9rem;
+  }
+  .geoloc {
+    height: 2.9rem;
+  }
+  .submitbtn {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media all and (max-width: 520px) {
+  .searchbox {
+    height: 2.7rem;
+  }
+  .geoloc {
+    height: 2.7rem;
+  }
+  .submitbtn {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+@media all and (max-width: 400px) {
+  .searchbox {
+    height: 2.5rem;
+    font-size: 11px;
+  }
+  .geoloc {
+    height: 2.5rem;
+    font-size: 11px;
+  }
+  .geoloc:after {
+    top: 7px;
+    height: 1.8rem;
+  }
+  .submitbtn {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+}
+@media all and (max-width: 350px) {
+  .searchbox {
+    height: 2.3rem;
+    font-size: 11px;
+  }
+  .geoloc {
+    height: 2.3rem;
+    font-size: 11px;
+  }
+  .geoloc:after {
+    top: 6px;
+    height: 1.7rem;
+  }
+  .submitbtn {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}

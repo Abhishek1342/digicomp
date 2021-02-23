@@ -1,7 +1,8 @@
 import React from "react";
+import "./index.scss";
 
 // Home-top
-import Homelanding from "./Top/home-landing";
+import HomeTop from "./Top/home-landing";
 
 // Type
 import Type from "./Type/type";
@@ -24,7 +25,7 @@ import Footer from "../Footer/footer";
 const HomePage = () => {
   return (
     <React.Fragment>
-      <Homelanding />
+      <HomeTop />
 
       <Type />
 
