@@ -24,6 +24,17 @@
 @import "./scss/child-2";
 @import "./scss/child-3";
 
+@media all and (max-width: 1310px) {
+  .disease-card-main {
+    grid-row-gap: 4%;
+  }
+}
+@media all and (max-width: 650px) {
+  .disease-card-main {
+    grid-row-gap: 2%;
+  }
+}
+
 @media all and (max-width: 1310px) and (min-width: 1000px) {
   .disease-card-main {
     padding: 4% 12% 6%;
@@ -56,21 +67,22 @@
   .dise-card-main {
     min-width: 270px;
   }
-}
-@media all and (max-width: 300px) {
-  .dise-card-main {
-    min-width: 250px;
-  }
   .child-disease-with-btn {
     .grand-disease-3-btn {
       &:hover {
         width: 55%;
       }
       a {
+        font-size: 10px;
         &:hover {
-          font-size: 14px;
+          font-size: 15px;
         }
       }
     }
+  }
+}
+@media all and (max-width: 300px) {
+  .dise-card-main {
+    min-width: 250px;
   }
 }

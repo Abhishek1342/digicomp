@@ -294,3 +294,22 @@
     justify-items: self-start;
   }
 }
+
+@media all and (max-width: 1050px) {
+  .specialist-card-main {
+    margin-top: 7%;
+    grid-row-gap: 2%;
+  }
+}
+@media all and (max-width: 700px) {
+  .specialist-card-main {
+    margin-top: 8%;
+    grid-row-gap: 1.5%;
+  }
+}
+@media all and (max-width: 500px) {
+  .specialist-card-main {
+    margin-top: 10%;
+    grid-row-gap: 1.5%;
+  }
+}
