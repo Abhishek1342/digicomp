@@ -121,18 +121,120 @@
   .page-info {
     font-size: 13px !important;
   }
+}
+
+/* @media only screen and (max-width: 1077px) {
+  .Landing-cntnt {
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+  }
+  .searchbar {
+    order: 0;
+  }
+  .Landing-txt {
+    order: 1;
+    width: 80%;
+  }
+  .Landing-svg {
+    display: none;
+  }
+  .Landing-txt h1,
+  .page-info {
+    padding: 0 0 5% 0;
+  }
+}
+
+@media only screen and (max-width: 986px) {
+  .Landing-nav {
+    height: 6rem;
+  }
+  .Landing-txt {
+    width: 100%;
+    padding: 2% 0;
+  }
+  .nav-lnks a {
+    width: 80px;
+    font-size: 11px;
+  }
+  .Brnd {
+    font-size: 70px;
+  }
+  .page-info {
+    font-size: 15px !important;
+    padding: 5% 0;
+  }
+  .home-bg {
+    scale: 2;
+    transform: translateX(-80px);
+  }
+  .Landing-txt h1 {
+    padding: 2% 0 0% 0;
+  }
+}
+
+@media only screen and (max-width: 606px) {
+  .page-info {
+    font-size: 15px !important;
+    padding: 5% 0;
+  }
+  .home-bg {
+    scale: 3;
+    transform: translateX(-80px);
+  }
+  .Landing-txt h1 {
+    padding: 2% 0 0% 0;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .Landing-nav {
+    height: 6rem;
+  }
+  .Landing-txt {
+    width: 100%;
+    padding: 2% 0;
+  }
+  .nav-lnks a {
+    width: 60px;
+    font-size: 8px;
+  }
+  .Brnd {
+    font-size: 48px;
+  }
+  .page-info {
+    font-size: 10px !important;
+    padding: 10% 0;
+  }
+  .home-bg {
+    scale: 7;
+    transform: translateX(-80px);
+  }
+  .Landing-txt h1 {
+    padding: 25% 0 0% 0;
+  }
+} */
+
 .ReactModal__Overlay {
   opacity: 0;
-  transform: translateY(-500px);
+  /* transform: translateY(-500px); */
   transition: all 500ms ease-in-out;
 }
 
 .ReactModal__Overlay--after-open {
   opacity: 1;
-  transform: translateX(0px);
+  /* transform: translateX(0px); */
 }
 
 .ReactModal__Overlay--before-close {
   opacity: 0;
-  transform: translateY(500px);
+  /* transform: translateY(500px); */
+}
+/* .Landing-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+} */
+.searchbar {
+  max-width: 500px;
 }

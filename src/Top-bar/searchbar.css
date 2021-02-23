@@ -14,6 +14,7 @@
   text-decoration: none;
   border: none;
   border-radius: 0 33px 33px 0;
+  padding: 0 3.2rem 0 1%;
 }
 
 .geoloc {
@@ -59,3 +60,8 @@
 .searchbox:focus {
   outline: none;
 }
+/* @media only screen and (max-width: 1079px) {
+  .searchbox {
+
+  }
+} */
