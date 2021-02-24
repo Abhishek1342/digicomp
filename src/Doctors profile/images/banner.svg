@@ -1,0 +1,35 @@
+<svg width="273" height="273" viewBox="0 0 273 273" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="3.42993" y="233.516" width="324.937" height="55.8393" transform="rotate(-45 3.42993 233.516)" fill="url(#paint0_linear)"/>
+<g filter="url(#filter0_i)">
+<path d="M233.302 3.75084L194.893 42.8383L183.977 42.838L233.302 3.75084Z" fill="#752DEB"/>
+</g>
+<g filter="url(#filter1_i)">
+<path d="M3.42986 233.622L42.5173 194.535L42.5173 182.436L3.42986 233.622Z" fill="#752DEB"/>
+</g>
+<defs>
+<filter id="filter0_i" x="183.977" y="-0.249146" width="49.3248" height="43.0874" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+</filter>
+<filter id="filter1_i" x="3.42987" y="178.436" width="39.0875" height="55.186" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+</filter>
+<linearGradient id="paint0_linear" x1="-0.593852" y1="213.849" x2="398.198" y2="279.656" gradientUnits="userSpaceOnUse">
+<stop stop-color="#752DEB"/>
+<stop offset="1" stop-color="#B059AD"/>
+</linearGradient>
+</defs>
+</svg>
