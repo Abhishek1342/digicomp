@@ -11,6 +11,15 @@ function Textbox(props) {
     />
   );
 }
+function Textarea(props) {
+  return (
+    <textarea
+      className="input-field input-area"
+      id={props.id}
+      placeholder={props.placeholder}
+    />
+  );
+}
 
 function PwdField(props) {
   const [cngpwd, setcngpwd] = useState("password");
@@ -57,4 +66,4 @@ function Submit(prop) {
 //   );
 // }
 
-export { Textbox, PwdField, Submit };
+export { Textbox, PwdField, Textarea, Submit };
