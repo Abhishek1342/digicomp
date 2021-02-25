@@ -13,11 +13,11 @@
 }
 
 .login-partner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
   width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2%;
 }
 
 .login-partner a {
@@ -31,7 +31,7 @@
 }
 
 .form-container {
-  width: 100%;
+  width: auto;
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -79,6 +79,7 @@
 }
 .customgap {
   height: 13rem;
+  width: auto;
 }
 /* Sign up starts here */
 .extendheight {
@@ -86,6 +87,7 @@
 }
 .signup-gap {
   height: 22rem;
+  width: auto;
 }
 #submit-signup {
   background: linear-gradient(91.29deg, #752deb -2.71%, #b059ad 138.68%);
@@ -102,4 +104,139 @@
   position: absolute;
   margin-top: 1rem;
   margin-left: 17rem;
+}
+
+@media all and (max-width: 950px) {
+  .popup-container {
+    width: 21rem;
+    height: 26rem;
+  }
+  .mksmll {
+    padding-top: 10px;
+    height: 13rem;
+  }
+  .mkgap {
+    height: 8rem;
+  }
+
+  .extendheight {
+    height: 31rem;
+  }
+  .signup-gap {
+    height: 20rem;
+  }
+  .customheight {
+    height: 18rem;
+  }
+  .customgap {
+    height: 12rem;
+  }
+  .eyes {
+    margin-top: 0.82rem;
+    margin-left: 16.2rem;
+    font-size: 15px;
+  }
+  .login-partner a {
+    width: 70px;
+    height: 45px;
+  }
+  .login-partner a img {
+    width: 30px;
+  }
+  .alternative-opt-container {
+    height: 2.5rem;
+  }
+  .alternative-opt-container a,
+  .alternative-opt-container p,
+  .alternative-opt-container p a {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .popup-container {
+    width: 18rem;
+    height: 24rem;
+  }
+  .mksmll {
+    height: 13rem;
+  }
+  .extendheight {
+    height: 30rem;
+  }
+  .signup-gap {
+    height: 19rem;
+  }
+  .customheight {
+    height: 16rem;
+  }
+  .customgap {
+    height: 11rem;
+  }
+  .login-partner a {
+    width: 65px;
+    height: 40px;
+  }
+  .login-partner a img {
+    width: 28px;
+  }
+  .eyes {
+    margin-top: 0.76rem;
+    margin-left: 13.8rem;
+    font-size: 14px;
+  }
+  .alternative-opt-container {
+    height: 2.1rem;
+  }
+  .alternative-opt-container a,
+  .alternative-opt-container p,
+  .alternative-opt-container p a {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .popup-container {
+    width: 15rem;
+    height: 20rem;
+  }
+  .mksmll {
+    padding-top: 10px;
+    height: 11rem;
+  }
+  .mkgap {
+    height: 7rem;
+  }
+  .extendheight {
+    height: 26rem;
+  }
+  .signup-gap {
+    height: 17rem;
+  }
+  .customheight {
+    height: 14rem;
+  }
+  .customgap {
+    height: 10rem;
+  }
+  .login-partner a {
+    width: 60px;
+    height: 35px;
+  }
+  .login-partner a img {
+    width: 25px;
+  }
+  .eyes {
+    margin-top: 0.71rem;
+    margin-left: 11.6rem;
+    font-size: 13px;
+  }
+  .alternative-opt-container {
+    height: 1.8rem;
+  }
+  .alternative-opt-container a,
+  .alternative-opt-container p,
+  .alternative-opt-container p a {
+    font-size: 10px;
+  }
 }

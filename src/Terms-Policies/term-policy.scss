@@ -1,0 +1,34 @@
+.terms-policies {
+  margin: 2% 7% 1.5%;
+  .terms-policies-head {
+    line-height: 48px;
+    color: #742ee9;
+  }
+  .terms-policies-date {
+    line-height: 36px;
+    color: #a68efe;
+  }
+  .terms-policies-description {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #0b0b0b;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .terms-policies {
+    margin: 1.5% 5% 0.5%;
+    .terms-policies-head {
+      line-height: 40px;
+    }
+    .terms-policies-date {
+      line-height: 30px;
+    }
+    .terms-policies-description {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

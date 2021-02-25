@@ -1,0 +1,20 @@
+.how-to-use {
+  margin: 2% 7% 1.5%;
+  min-height: 42.4vh;
+  .how-to-use-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .how-to-use-dash {
+      background-color: #742ee9;
+      height: 4px;
+      width: 23px;
+    }
+    .how-to-use-title {
+      padding: 0 10px;
+      text-align: center;
+      line-height: 48px;
+      color: #742ee9;
+    }
+  }
+}

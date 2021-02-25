@@ -41,3 +41,22 @@
 .password-area {
   display: flex;
 }
+
+@media all and (max-width: 950px) {
+  .input-field {
+    width: 292px;
+    height: 2.6rem;
+  }
+}
+@media all and (max-width: 650px) {
+  .input-field {
+    width: 252px;
+    height: 2.4rem;
+  }
+}
+@media all and (max-width: 450px) {
+  .input-field {
+    width: 212px;
+    height: 2.2rem;
+  }
+}
