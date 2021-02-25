@@ -1,4 +1,5 @@
-.input-field {
+.input-field,
+.input-area {
   width: 308px;
   height: 3rem;
   text-decoration: none;
@@ -7,8 +8,18 @@
   border: 1.5px solid #1a73e8;
   border-radius: 6px;
   padding-left: 20px;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
 }
-.input-field:focus {
+.input-area {
+  max-width: 100%;
+  width: 100%;
+  height: 7rem;
+  max-height: 10rem;
+  padding-top: 10px;
+}
+.input-field:focus,
+.input-area:focus {
   border: 3px solid #6eabfa;
 }
 .submit {
