@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-
+import userImg from "../Member/images/Pratik.jpg";
+import { Link } from "react-router-dom";
 import "./index.scss";
 
 import "./home-landing.css";
@@ -17,11 +18,22 @@ import { modalStyle } from "../../Top-bar/modalStyle";
 const HomeTop = () => {
   const [modalLoginIsOpen, setModalLoginIsOpen] = useState(false);
   const [modalSignupIsOpen, setModalSignupIsOpen] = useState(false);
+  const [display, setDisplay] = useState("none");
+  const [rotate, setRotate] = useState("rotate(0deg)");
+  const displayDropdown = () => {
+    if (display === "none") {
+      setDisplay("flex");
+      setRotate("rotate(90deg)");
+    } else {
+      setDisplay("none");
+      setRotate("rotate(0deg)");
+    }
+  };
   return (
     <div className="home-top">
       <div className="home-top-nav">
         <img className="home-top-nav-img" src={Logo} alt="logo" />
-        <ul className="home-top-nav-links">
+        {/* <ul className="home-top-nav-links">
           <li
             className="home-top-loginSignup"
             onClick={() => setModalLoginIsOpen(true)}
@@ -50,7 +62,23 @@ const HomeTop = () => {
           >
             <SignUp></SignUp>
           </Modal>
-        </ul>
+        </ul> */}
+        <div className="home-top-dropdown">
+          <div
+            className="home-top-user-profile-button"
+            onClick={displayDropdown}
+          >
+            <img className="child-1-home-top-circle" src={userImg} alt="logo" />
+            <i
+              class="fas fa-caret-right child-1-home-top-arrow"
+              style={{ transform: rotate }}
+            ></i>
+          </div>
+          <div className="home-top-dropdown-box" style={{ display: display }}>
+            <Link className="home-top-dropdown-item">Your Profile</Link>
+            <Link className="home-top-dropdown-item">Sign Out </Link>
+          </div>
+        </div>
       </div>
       <div className="home-top-base">
         <div className="home-top-details">

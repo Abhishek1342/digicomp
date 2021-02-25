@@ -32,6 +32,56 @@
       }
     }
   }
+  .home-top-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+
+    .home-top-user-profile-button {
+      display: flex;
+      margin-top: -27px;
+      margin-right: -16px;
+      align-items: center;
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+      }
+      .child-1-home-top-circle {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+      }
+      .child-1-home-top-arrow {
+        color: white;
+        font-size: 18px;
+        margin-left: 7px;
+        transition: transform 100ms ease-out;
+      }
+    }
+    .home-top-dropdown-box {
+      position: absolute;
+      margin-top: 21px;
+      margin-left: -72px;
+      display: flex;
+      flex-direction: column;
+      background-color: #d1c3fa;
+      border-right: 3.6px solid #9278dd;
+      .home-top-dropdown-item {
+        color: white;
+        text-decoration: navajowhite;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 5px 12px;
+        border-bottom: 0.3px solid rgb(99, 99, 185);
+        &:last-child {
+          border-bottom: none;
+        }
+        &:hover {
+          color: #f4f2f8;
+        }
+      }
+    }
+  }
 }
 
 @media all and (max-width: 1050px) {
