@@ -66,6 +66,7 @@
       flex-direction: column;
       background-color: #d1c3fa;
       border-right: 3.6px solid #9278dd;
+      z-index: 2;
       .home-top-dropdown-item {
         color: white;
         text-decoration: navajowhite;
@@ -101,11 +102,33 @@
         border-radius: 5px;
       }
     }
+    .home-top-dropdown {
+      .home-top-user-profile-button {
+        margin-top: -24px;
+        .child-1-home-top-circle {
+          width: 39px;
+          height: 39px;
+        }
+        .child-1-home-top-arrow {
+          font-size: 17px;
+          margin-left: 6px;
+        }
+      }
+      .home-top-dropdown-box {
+        margin-left: -64px;
+        border-right: 3.4px solid #9278dd;
+        .home-top-dropdown-item {
+          font-weight: 700;
+          font-size: 16px;
+          padding: 4.5px 11px;
+        }
+      }
+    }
   }
 }
 @media all and (max-width: 830px) {
   .home-top-nav {
-    padding: 15px 5%;
+    padding: 15px 7% 15px 5%;
     .home-top-nav-img {
       width: 70px;
       height: 70px;
@@ -120,12 +143,34 @@
         border-radius: 5px;
       }
     }
+    .home-top-dropdown {
+      .home-top-user-profile-button {
+        margin-top: -21px;
+        .child-1-home-top-circle {
+          width: 36px;
+          height: 36px;
+        }
+        .child-1-home-top-arrow {
+          font-size: 16px;
+          margin-left: 6px;
+        }
+      }
+      .home-top-dropdown-box {
+        margin-left: -60px;
+        border-right: 3.2px solid #9278dd;
+        .home-top-dropdown-item {
+          font-weight: 700;
+          font-size: 15px;
+          padding: 4px 10px;
+        }
+      }
+    }
   }
 }
 
 @media all and (max-width: 690px) {
   .home-top-nav {
-    padding: 15px 5%;
+    padding: 15px 9% 15px 5%;
     .home-top-nav-img {
       width: 80px;
       height: 80px;
@@ -145,7 +190,7 @@
 
 @media all and (max-width: 520px) {
   .home-top-nav {
-    padding: 15px 5%;
+    padding: 15px 9% 15px 5%;
     .home-top-nav-img {
       width: 70px;
       height: 70px;
@@ -158,6 +203,29 @@
         margin-left: 27px;
         padding: 0.3rem 0.2rem;
         border-radius: 5px;
+      }
+    }
+    .home-top-dropdown {
+      .home-top-user-profile-button {
+        margin-top: -25px;
+        .child-1-home-top-circle {
+          width: 35px;
+          height: 35px;
+        }
+        .child-1-home-top-arrow {
+          font-size: 16px;
+          margin-left: 6px;
+        }
+      }
+      .home-top-dropdown-box {
+        margin-top: 15px;
+        margin-left: -57px;
+        border-right: 3.2px solid #9278dd;
+        .home-top-dropdown-item {
+          font-weight: 700;
+          font-size: 14px;
+          padding: 4.5px 10.5px;
+        }
       }
     }
   }

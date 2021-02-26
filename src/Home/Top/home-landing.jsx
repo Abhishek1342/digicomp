@@ -70,7 +70,7 @@ const HomeTop = () => {
           >
             <img className="child-1-home-top-circle" src={userImg} alt="logo" />
             <i
-              class="fas fa-caret-right child-1-home-top-arrow"
+              className="fas fa-caret-right child-1-home-top-arrow"
               style={{ transform: rotate }}
             ></i>
           </div>
