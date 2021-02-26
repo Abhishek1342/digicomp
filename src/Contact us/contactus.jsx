@@ -1,6 +1,8 @@
-import React from "react";
+import React {useState} from "react";
 import "./contactus.css";
 import { Textbox, Submit, Textarea } from "../Top-bar/Account/input";
+
+
 
 function Contactus() {
   return (
@@ -50,7 +52,7 @@ function Contactus() {
             adipisicing enim dolor eiusmod ullamco excepteur tempor voluptate
             quis labore. Irure sit proident nostrud proident ex cillum elit
           </div>
-          <div className="Contact-us-Address">
+          <div className="Contact-us-address">
             <i class="fas fa-map-marked-alt"></i>
             <b>Address : </b>
             <a href="/#">Location here</a>
