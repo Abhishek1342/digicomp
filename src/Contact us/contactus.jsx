@@ -3,7 +3,9 @@ import "./contactus.css";
 import { Textbox, Submit, Textarea } from "../Top-bar/Account/input";
 
 function Contactus() {
-  const [colour, setColour] = useState("white");
+  const [colour1, setColour1] = useState("white");
+  const [colour2, setColour2] = useState("white");
+  const [colour3, setColour3] = useState("white");
   return (
     <div className="contact-us-container">
       <div className="Contact-us-card">
@@ -50,27 +52,44 @@ function Contactus() {
             proident quis exercitation sint aliquip cupidatat laborum ut. Irure
             adipisicing enim dolor eiusmod ullamco excepteur tempor voluptate
             quis labore. Irure sit proident nostrud proident ex cillum elit
+            Consequat eiusmod irure veniam consequat velit minim amet
+            exercitation esse. Consectetur quis aute irure eu velit mollit
+            proident quis exercitation sint aliquip cupidatat laborum ut. Irure
+            adipisicing enim dolor eiusmod ullamco excepteur tempor voluptate
+            quis labore. Irure sit proident nostrud proident ex cillum elit
           </div>
           <div className="Contact-us-address">
-            <i class="fas fa-map-marked-alt" style={{ color: colour }}></i>
+            <i class="fas fa-map-marked-alt" style={{ color: colour1 }}></i>
             <b>Address : </b>
             <a
               href="/#"
-              onMouseEnter={() => setColour("red")}
-              onMouseLeave={() => setColour("white")}
+              onMouseEnter={() => setColour1("#e0c6ff")}
+              onMouseLeave={() => setColour1("white")}
             >
               Location here
             </a>
           </div>
           <div className="Contact-us-phone">
-            <i class="fas fa-phone-alt"></i>
+            <i class="fas fa-phone-alt" style={{ color: colour2 }}></i>
             <b>Phone : </b>
-            <a href="tel:+000000000000">+00 0000000000</a>
+            <a
+              href="tel:+000000000000"
+              onMouseEnter={() => setColour2("#e0c6ff")}
+              onMouseLeave={() => setColour2("white")}
+            >
+              +00 0000000000
+            </a>
           </div>
           <div className="Contact-us-email">
-            <i class="fas fa-envelope"></i>
+            <i class="fas fa-envelope" style={{ color: colour3 }}></i>
             <b>Email : </b>
-            <a href="mailto:example@gmail.com">Email here</a>
+            <a
+              href="mailto:example@gmail.com"
+              onMouseEnter={() => setColour3("#e0c6ff")}
+              onMouseLeave={() => setColour3("white")}
+            >
+              Email here
+            </a>
           </div>
           <div className="Contact-us-social-links">
             <a href="/#">
