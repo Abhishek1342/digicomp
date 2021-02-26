@@ -1,10 +1,9 @@
-import React {useState} from "react";
+import React, { useState } from "react";
 import "./contactus.css";
 import { Textbox, Submit, Textarea } from "../Top-bar/Account/input";
 
-
-
 function Contactus() {
+  const [colour, setColour] = useState("white");
   return (
     <div className="contact-us-container">
       <div className="Contact-us-card">
@@ -53,9 +52,15 @@ function Contactus() {
             quis labore. Irure sit proident nostrud proident ex cillum elit
           </div>
           <div className="Contact-us-address">
-            <i class="fas fa-map-marked-alt"></i>
+            <i class="fas fa-map-marked-alt" style={{ color: colour }}></i>
             <b>Address : </b>
-            <a href="/#">Location here</a>
+            <a
+              href="/#"
+              onMouseEnter={() => setColour("red")}
+              onMouseLeave={() => setColour("white")}
+            >
+              Location here
+            </a>
           </div>
           <div className="Contact-us-phone">
             <i class="fas fa-phone-alt"></i>
