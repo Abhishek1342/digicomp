@@ -14,13 +14,12 @@ nav {
   top: 0;
 }
 .brand-div {
-  width: 19%;
   height: 100%;
-  padding: 8.5px 0;
+  display: flex;
+  align-items: center;
 }
 .brnding a {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   text-decoration: none;
   color: #fff;
@@ -28,12 +27,12 @@ nav {
 .brnding a img {
   width: 50px;
   height: 50px;
+  margin-right: 10px;
 }
 .brnding a h1 {
   font-size: 2rem;
 }
 .navitm {
-  width: 20%;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -42,10 +41,10 @@ nav {
 }
 .navitm a {
   display: inline-block;
+  width: 6rem;
   background: #fff;
-  width: 100px;
-  padding: 0.4rem 0;
-  margin: -5px 7% 0;
+  padding: 0.44rem 0rem;
+  margin-left: 2rem;
   text-decoration: none;
   color: #1c1a2a;
   border-radius: 5px;
@@ -58,4 +57,33 @@ nav {
 .navitm a:active {
   transform: translate(5px, 5px);
   box-shadow: none;
+}
+.navitm a:hover {
+  cursor: pointer;
+}
+
+@media all and (max-width: 1050px) {
+  nav {
+    height: 66px;
+    padding: 0 8.5%;
+  }
+  .brnding a img {
+    width: 48px;
+    height: 48px;
+    margin-right: 7px;
+  }
+  .brnding a h1 {
+    font-size: 1.9rem;
+  }
+  .navitm a {
+    width: 5.5rem;
+    font-size: 15px;
+    padding: 0.39rem 0rem;
+    margin-left: 1.8rem;
+    border-radius: 4.8px;
+    box-shadow: 4.8px 4.8px 0px #bbcddf;
+  }
+  .navitm a:active {
+    transform: translate(4.8px, 4.8px);
+  }
 }

@@ -15,8 +15,8 @@ function Navbar() {
         </div>
       </div>
       <div className="navitm">
-        <a href="/#">Log In</a>
-        <a href="/#">Sign Up</a>
+        <a>Log In</a>
+        <a>Sign Up</a>
       </div>
     </nav>
   );
