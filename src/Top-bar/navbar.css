@@ -87,3 +87,105 @@ nav {
     transform: translate(4.8px, 4.8px);
   }
 }
+@media all and (max-width: 1050px) {
+  nav {
+    height: 66px;
+    padding: 0 8.5%;
+  }
+  .brnding a img {
+    width: 48px;
+    height: 48px;
+    margin-right: 7px;
+  }
+  .brnding a h1 {
+    font-size: 1.9rem;
+  }
+  .navitm a {
+    width: 5.5rem;
+    font-size: 15px;
+    padding: 0.39rem 0rem;
+    margin-left: 1.8rem;
+    border-radius: 4.8px;
+    box-shadow: 4.8px 4.8px 0px #bbcddf;
+  }
+  .navitm a:active {
+    transform: translate(4.8px, 4.8px);
+  }
+}
+@media all and (max-width: 750px) {
+  nav {
+    height: 63px;
+    padding: 0 6.5%;
+  }
+  .brnding a img {
+    width: 45px;
+    height: 45px;
+    margin-right: 6px;
+  }
+  .brnding a h1 {
+    font-size: 1.7rem;
+  }
+  .navitm a {
+    width: 4.8rem;
+    font-size: 14px;
+    padding: 0.3rem 0rem;
+    margin-left: 1.5rem;
+    border-radius: 4.5px;
+    box-shadow: 4.3px 4.3px 0px #bbcddf;
+  }
+  .navitm a:active {
+    transform: translate(4.3px, 4.3px);
+  }
+}
+
+@media all and (max-width: 500px) {
+  nav {
+    height: 54px;
+    padding: 0 2.2%;
+  }
+  .brnding a img {
+    width: 36px;
+    height: 36px;
+    margin-right: 3px;
+  }
+  .brnding a h1 {
+    font-size: 1.5rem;
+  }
+  .navitm a {
+    width: 4rem;
+    font-size: 12px;
+    padding: 0.3rem 0rem;
+    margin-left: 1rem;
+    border-radius: 4.1px;
+    box-shadow: 3.8px 3.8px 0px #bbcddf;
+  }
+  .navitm a:active {
+    transform: translate(3.8px, 3.8px);
+  }
+}
+
+@media all and (max-width: 350px) {
+  nav {
+    height: 42px;
+    padding: 0 1.6%;
+  }
+  .brnding a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 2.5px;
+  }
+  .brnding a h1 {
+    font-size: 1.2rem;
+  }
+  .navitm a {
+    width: 3rem;
+    font-size: 10px;
+    padding: 0.24rem 0rem;
+    margin-left: 0.6rem;
+    border-radius: 3px;
+    box-shadow: 3px 3px 0px #bbcddf;
+  }
+  .navitm a:active {
+    transform: translate(3px, 3px);
+  }
+}
