@@ -15,15 +15,15 @@ const Footer = () => {
         <div className="quick-links-footer">
           <h2 className="grand-2-foot-head">Quick Links</h2>
           <ul className="grand-2-foot-list">
-            <Link className="grand-2-foot-link">
+            <Link to="/doctors" className="grand-2-foot-link">
               <i class="far fa-hand-point-right"></i>&nbsp;
               <li>Doctors</li>
             </Link>
-            <Link className="grand-2-foot-link">
+            <Link to="/diseases" className="grand-2-foot-link">
               <i class="far fa-hand-point-right"></i>&nbsp;
               <li>Diseases</li>
             </Link>
-            <Link className="grand-2-foot-link">
+            <Link to="/specialists" className="grand-2-foot-link">
               <i class="far fa-hand-point-right"></i>&nbsp;
               <li>Specialists</li>
             </Link>
@@ -32,14 +32,14 @@ const Footer = () => {
         <div className="contact-footer">
           <h2 className="grand-2-foot-head">Contact Us</h2>
           <ul className="grand-2-foot-list">
-            <Link className="grand-2-foot-link">
+            <a href="tel:+000000000000" className="grand-2-foot-link">
               <i class="far fa-hand-point-right"></i>&nbsp;
               <li>+00 0000000000</li>
-            </Link>
-            <Link className="grand-2-foot-link">
+            </a>
+            <a href="mailto:abc@digicomp.com" className="grand-2-foot-link">
               <i class="far fa-hand-point-right"></i>&nbsp;
               <li>abc@digicomp.com</li>
-            </Link>
+            </a>
             <Link className="grand-2-foot-link">
               <i class="far fa-hand-point-right"></i>&nbsp;
               <li>Help</li>

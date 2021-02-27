@@ -61,6 +61,56 @@ nav {
 .navitm a:hover {
   cursor: pointer;
 }
+.home-top-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+.home-top-dropdown .home-top-user-profile-button {
+  display: flex;
+  height: 100%;
+  margin-right: -55px;
+  align-items: center;
+  text-decoration: none;
+}
+.home-top-dropdown .home-top-user-profile-button:hover {
+  cursor: pointer;
+}
+.home-top-dropdown .home-top-user-profile-button .child-1-home-top-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+.home-top-dropdown .home-top-user-profile-button .child-1-home-top-arrow {
+  color: white;
+  font-size: 18px;
+  margin-left: 7px;
+  transition: transform 100ms ease-out;
+}
+.home-top-dropdown .home-top-dropdown-box {
+  position: absolute;
+  margin-top: 63px;
+  margin-left: -72px;
+  display: flex;
+  flex-direction: column;
+  background-color: #a09fa5;
+  border-right: 3.6px solid #000;
+  z-index: 2;
+}
+.home-top-dropdown .home-top-dropdown-box .home-top-dropdown-item {
+  color: white;
+  text-decoration: navajowhite;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 5px 12px;
+  border-bottom: 0.3px solid black;
+}
+.home-top-dropdown .home-top-dropdown-box .home-top-dropdown-item:hover {
+  color: #e2e2e2;
+}
+.home-top-dropdown .home-top-dropdown-box .home-top-dropdown-item:last-child {
+  border-bottom: none;
+}
 
 @media all and (max-width: 1050px) {
   nav {
@@ -86,32 +136,15 @@ nav {
   .navitm a:active {
     transform: translate(4.8px, 4.8px);
   }
-}
-@media all and (max-width: 1050px) {
-  nav {
-    height: 66px;
-    padding: 0 8.5%;
+  .home-top-dropdown .home-top-user-profile-button {
+    margin-right: -42px;
   }
-  .brnding a img {
-    width: 48px;
-    height: 48px;
-    margin-right: 7px;
-  }
-  .brnding a h1 {
-    font-size: 1.9rem;
-  }
-  .navitm a {
-    width: 5.5rem;
-    font-size: 15px;
-    padding: 0.39rem 0rem;
-    margin-left: 1.8rem;
-    border-radius: 4.8px;
-    box-shadow: 4.8px 4.8px 0px #bbcddf;
-  }
-  .navitm a:active {
-    transform: translate(4.8px, 4.8px);
+  .home-top-dropdown .home-top-dropdown-box {
+    margin-top: 60px;
+    margin-left: -69px;
   }
 }
+
 @media all and (max-width: 750px) {
   nav {
     height: 63px;
@@ -135,6 +168,9 @@ nav {
   }
   .navitm a:active {
     transform: translate(4.3px, 4.3px);
+  }
+  .home-top-dropdown .home-top-user-profile-button {
+    margin-right: -14px;
   }
 }
 
@@ -162,6 +198,29 @@ nav {
   .navitm a:active {
     transform: translate(3.8px, 3.8px);
   }
+  .home-top-dropdown .home-top-user-profile-button .child-1-home-top-circle {
+    width: 39px;
+    height: 39px;
+  }
+  .home-top-dropdown .home-top-user-profile-button .child-1-home-top-arrow {
+    font-size: 17px;
+    margin-left: 6px;
+  }
+  .home-top-dropdown .home-top-dropdown-box {
+    margin-left: -64px;
+    border-right: 3.4px solid #000;
+  }
+  .home-top-dropdown .home-top-dropdown-box .home-top-dropdown-item {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 4.5px 11px;
+  }
+  .home-top-dropdown .home-top-user-profile-button {
+    margin-right: 5px;
+  }
+  .home-top-dropdown .home-top-dropdown-box {
+    margin-top: 51px;
+  }
 }
 
 @media all and (max-width: 350px) {
@@ -187,5 +246,21 @@ nav {
   }
   .navitm a:active {
     transform: translate(3px, 3px);
+  }
+  .home-top-dropdown .home-top-user-profile-button .child-1-home-top-circle {
+    width: 32px;
+    height: 32px;
+  }
+  .home-top-dropdown .home-top-user-profile-button {
+    margin-right: 8 px;
+  }
+  .home-top-dropdown .home-top-dropdown-box .home-top-dropdown-item {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 4.5px 10px;
+  }
+  .home-top-dropdown .home-top-dropdown-box {
+    margin-top: 41px;
+    margin-left: -56px;
   }
 }
