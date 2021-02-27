@@ -40,7 +40,7 @@ const Footer = () => {
               <i class="far fa-hand-point-right"></i>&nbsp;
               <li>abc@digicomp.com</li>
             </a>
-            <Link className="grand-2-foot-link">
+            <Link to="/contact us" className="grand-2-foot-link">
               <i class="far fa-hand-point-right"></i>&nbsp;
               <li>Help</li>
             </Link>
@@ -60,15 +60,15 @@ const Footer = () => {
         <div className="policies-footer">
           <h2 className="grand-2-foot-head">Legal</h2>
           <ul className="grand-2-foot-list">
-            <Link className="grand-2-foot-link">
+            <Link to="/privacy policy" className="grand-2-foot-link">
               <i class="far fa-hand-point-right"></i>&nbsp;
               <li>Privacy Policy</li>
             </Link>
-            <Link className="grand-2-foot-link">
+            <Link to="/terms of use" className="grand-2-foot-link">
               <i class="far fa-hand-point-right"></i>&nbsp;
               <li>Terms and Conditions</li>
             </Link>
-            <Link className="grand-2-foot-link">
+            <Link to="/how to use" className="grand-2-foot-link">
               <i class="far fa-hand-point-right"></i>&nbsp;
               <li>How to Use</li>
             </Link>
