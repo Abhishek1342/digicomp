@@ -11,6 +11,18 @@ function Textbox(props) {
     />
   );
 }
+
+function TextboxContactUs(props) {
+  return (
+    <input
+      className="inputfieldwith100by100width input-field"
+      type={props.type}
+      id={props.id}
+      placeholder={props.placeholder}
+    />
+  );
+}
+
 function Textarea(props) {
   return (
     <textarea
@@ -59,6 +71,17 @@ function Submit(prop) {
     />
   );
 }
+
+function SubmitContactUs(prop) {
+  return (
+    <input
+      className="input-field submit inputfieldwith100by100width"
+      type="submit"
+      id={prop.id}
+      value={prop.value}
+    />
+  );
+}
 // function TnC(prop) {
 //   return (
 //     <input className="checkbox-field" type="checkbox" value={prop.value} />
@@ -66,4 +89,11 @@ function Submit(prop) {
 //   );
 // }
 
-export { Textbox, PwdField, Textarea, Submit };
+export {
+  Textbox,
+  PwdField,
+  Textarea,
+  TextboxContactUs,
+  Submit,
+  SubmitContactUs,
+};

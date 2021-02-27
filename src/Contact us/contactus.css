@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  margin: 2% 0;
+  margin: 10% 0;
 }
 .Contact-us-card {
   width: 100%;
@@ -17,7 +17,7 @@
   min-width: 300px;
   padding: 5% 10%;
   color: #fff;
-  height: 100%;
+  height: 50rem;
 }
 .left-contact-us {
   background-color: rgb(197, 197, 197);
@@ -32,7 +32,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
-  height: 31rem;
+  height: 39rem;
   color: rgb(51, 51, 51);
 }
 
@@ -91,4 +91,40 @@ lable {
 }
 .Contact-us-social-links a i:hover {
   color: rgb(51, 51, 51);
+}
+@media only screen and (max-width: 1319px) {
+  .Contact-us-info {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 971px) {
+  .Contact-us-info {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 805px) {
+  .Contact-us-phone b,
+  .Contact-us-email b,
+  .Contact-us-address b {
+    font-size: 12px;
+  }
+  .right-contact-us,
+  .left-contact-us {
+    padding: 2% 5%;
+    height: 43rem;
+  }
+}
+@media only screen and (max-width: 601px) {
+  .right-contact-us,
+  .left-contact-us {
+    padding: 5% 10%;
+    height: 43rem;
+    min-width: 100%;
+  }
+  .Contact-us-info {
+    font-size: 14px;
+  }
+  .right-contact-us {
+    height: 32rem;
+  }
 }

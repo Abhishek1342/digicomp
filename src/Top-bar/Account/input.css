@@ -1,3 +1,7 @@
+.inputfieldwith100by100width {
+  width: 100% !important;
+}
+
 .input-field,
 .input-area {
   width: 308px;
@@ -13,8 +17,8 @@
 }
 .input-area {
   max-width: 100%;
-  width: 100%;
-  height: 7rem;
+  min-width: 100%;
+  min-height: 10rem;
   max-height: 10rem;
   padding-top: 10px;
 }
@@ -36,6 +40,7 @@
 .submit:hover {
   background: linear-gradient(91.53deg, #752deb -23.93%, #8a74fa 72.14%);
   font-size: 1.4rem;
+  cursor: pointer;
 }
 /* .pwd-eye {
   display: inline-block;

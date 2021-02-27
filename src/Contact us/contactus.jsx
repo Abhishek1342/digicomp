@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "./contactus.css";
-import { Textbox, Submit, Textarea } from "../Top-bar/Account/input";
+import {
+  SubmitContactUs,
+  Textarea,
+  TextboxContactUs,
+} from "../Top-bar/Account/input";
 
 function Contactus() {
   const [colour1, setColour1] = useState("white");
@@ -14,7 +18,7 @@ function Contactus() {
           <form className="contact-us-form">
             <lable>Name</lable>
             <br />
-            <Textbox
+            <TextboxContactUs
               id="name-contact-us"
               placeholder="Enter you name here"
               type="text"
@@ -22,7 +26,7 @@ function Contactus() {
             <br />
             <lable>Email</lable>
             <br />
-            <Textbox
+            <TextboxContactUs
               id="email-contact-us"
               placeholder="Enter you email here"
               type="email"
@@ -36,7 +40,7 @@ function Contactus() {
             />
             <br />
             <center>
-              <Submit id="submit-contact-us" value="Send" />
+              <SubmitContactUs id="submit-contact-us" value="Send" />
             </center>
 
             <br />
@@ -77,7 +81,7 @@ function Contactus() {
               onMouseEnter={() => setColour2("#e0c6ff")}
               onMouseLeave={() => setColour2("white")}
             >
-              +00 0000000000
+              +910000000000
             </a>
           </div>
           <div className="Contact-us-email">
