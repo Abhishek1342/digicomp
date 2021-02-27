@@ -7,6 +7,52 @@
 .about-comp-main {
   display: flex;
   justify-content: space-around;
+  .child-with-head {
+    display: none;
+  }
+}
+@media all and (max-width: 1050px) {
+  .about-comp-main {
+    flex-direction: column;
+    .child-with-head {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+}
+@media all and (max-width: 600px) {
+  .about-comp-main {
+    .child-with-head {
+      margin-bottom: 15px;
+      .heading-home {
+        .title-home {
+          font-size: 36px;
+          line-height: 24px;
+        }
+        .dash-home {
+          width: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 420px) {
+  .about-comp-main {
+    .child-with-head {
+      margin-bottom: 15px;
+      .heading-home {
+        .title-home {
+          font-size: 30px;
+          line-height: 18px;
+        }
+        .dash-home {
+          width: 29px;
+          height: 3.6px;
+        }
+      }
+    }
+  }
 }
 
 @import "./scss/child-1";

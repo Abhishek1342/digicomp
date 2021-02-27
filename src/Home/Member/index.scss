@@ -35,6 +35,21 @@
   }
 }
 
+@media all and (max-width: 750px) {
+  .member-main {
+    .heading-home {
+      .title-home {
+        font-size: 40px;
+        padding: 0 10px;
+      }
+      .dash-home {
+        width: 42px;
+        height: 4px;
+      }
+    }
+  }
+}
+
 @import "./scss/child-1";
 @import "./scss/child-2";
 @import "./scss/child-3";

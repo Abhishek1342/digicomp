@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "./images/appointment.webp";
+import img1 from "./images/appointment.jpg";
 import img2 from "./images/date.jpg";
 import img3 from "./images/life.png";
 import img4 from "./images/tick.jpg";
@@ -8,6 +8,9 @@ import Heading from "../heading/heading";
 const AboutComponent = () => {
   return (
     <div className="about-comp-main">
+      <div className="child-with-head">
+        <Heading head="About Us" />
+      </div>
       <div className="child-with-img">
         <img src={img1} alt="" className="grand-image" id="grand-1" />
         <img src={img2} alt="" className="grand-image" id="grand-2" />

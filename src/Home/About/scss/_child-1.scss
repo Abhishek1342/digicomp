@@ -1,6 +1,6 @@
 .child-with-img {
   width: 45%;
-  padding-left: 5%;
+  padding-left: 7%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,5 +25,103 @@
   #grand-3 {
     margin-right: 240px;
     margin-top: -40px;
+  }
+}
+@media all and (max-width: 1350px) {
+  .child-with-img {
+    .grand-image {
+      width: 260px;
+      height: 160px;
+    }
+    #grand-1 {
+      margin-right: 180px;
+    }
+    #grand-2,
+    #grand-4 {
+      margin-left: 140px;
+      margin-top: -85px;
+    }
+    #grand-3 {
+      margin-right: 180px;
+      margin-top: -55px;
+    }
+  }
+}
+@media all and (max-width: 1050px) {
+  .child-with-img {
+    width: 80%;
+    margin-left: 10%;
+    height: 300px;
+    padding-left: 0px;
+    flex-direction: row;
+    background-image: url(../images/appointment.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 7px solid #fff;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.32);
+    border-radius: 15px;
+    animation: slider 16s infinite linear;
+    transition: all 0.3s ease;
+    .grand-image {
+      display: none;
+    }
+    #grand-1 {
+      margin-right: 0px;
+    }
+    #grand-2,
+    #grand-4 {
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+    #grand-3 {
+      margin-right: 0px;
+      margin-top: 0px;
+    }
+  }
+  @keyframes slider {
+    0% {
+      background-image: url(../images/appointment.jpg);
+    }
+    25% {
+      background-image: url(../images/date.jpg);
+    }
+    50% {
+      background-image: url(../images/life.png);
+    }
+    75% {
+      background-image: url(../images/tick.jpg);
+    }
+    100% {
+      background-image: url(../images/appointment.jpg);
+    }
+  }
+}
+
+@media all and (max-width: 650px) {
+  .child-with-img {
+    width: 90%;
+    margin-left: 5%;
+    height: 250px;
+    border: 6px solid #fff;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8.5px 0.9px rgba(0, 0, 0, 0.32);
+    border-radius: 12px;
+  }
+}
+@media all and (max-width: 420px) {
+  .child-with-img {
+    width: 95%;
+    margin-left: 2.5%;
+    height: 200px;
+    border: 4px solid #fff;
+  }
+}
+@media all and (max-width: 330px) {
+  .child-with-img {
+    width: 95%;
+    margin-left: 2.5%;
+    height: 175px;
+    border: 4px solid #fff;
   }
 }

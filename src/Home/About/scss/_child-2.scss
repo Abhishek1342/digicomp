@@ -12,3 +12,53 @@
     color: #28114e;
   }
 }
+
+@media all and (max-width: 1350px) {
+  .child-with-content {
+    .grand-about-desc {
+      font-size: 15px;
+      line-height: 24px;
+    }
+    .heading-home {
+      .title-home {
+        font-size: 36px;
+        line-height: 24px;
+      }
+      .dash-home {
+        width: 35px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1050px) {
+  .child-with-content {
+    width: 100%;
+    .grand-about-head {
+      display: none;
+    }
+    .grand-about-desc {
+      font-size: 16px;
+
+      line-height: 27px;
+    }
+  }
+}
+@media all and (max-width: 600px) {
+  .child-with-content {
+    padding: 0 4%;
+    .grand-about-desc {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}
+@media all and (max-width: 450px) {
+  .child-with-content {
+    padding: 0 2%;
+    .grand-about-desc {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
