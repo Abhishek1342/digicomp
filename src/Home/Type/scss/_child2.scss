@@ -1,16 +1,46 @@
 .name-child {
-  height: 48px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #eeeeee;
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 4px 4px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
   transition: all 0.3s ease-in;
-
+  padding-left: 16px;
   .fas {
     margin-top: 2px;
+    transition: all 0.3s ease;
+  }
+}
+
+@media all and (max-width: 950px) and (min-width: 650px) {
+  .name-child {
+    font-size: 16px;
+    padding-left: 12px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .name-child {
+    height: 46px;
+    font-size: 20px;
+    padding-left: 16px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .name-child {
+    height: 40px;
+    font-size: 18px;
+    padding-left: 16px;
+  }
+}
+@media all and (max-width: 350px) {
+  .name-child {
+    font-size: 16px;
+    padding-left: 12px;
   }
 }

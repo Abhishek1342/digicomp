@@ -2,21 +2,25 @@
 @import "./scss/variable";
 
 .member-main {
-  margin-top: 1%;
-  padding: 3% 10% 2%;
+  padding: 0% 4% 2%;
+}
+.heading-members {
   background: rgba(172, 209, 227, 0.33);
+  padding-top: 16px;
+  .heading-home {
+    margin-bottom: 16px;
+  }
 }
 .member-card {
-  padding-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   justify-items: center;
-  grid-column-gap: 3%;
+  grid-column-gap: 4%;
   grid-row-gap: 2rem;
 }
 
 .member-card-main {
-  width: 100%;
+  width: 260px;
   height: auto;
   border: 1px solid #8a8a8a;
   border-radius: 4px;
@@ -27,24 +31,86 @@
       display: flex;
       opacity: 1;
       transform: translateY(-15px);
+    }
+  }
+}
 
-      a {
-        transform: rotate(360deg);
+@media all and (max-width: 1150px) and (min-width: 850px) {
+  .member-main {
+    padding: 0% 2.5% 2%;
+  }
+  .member-card {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .member-card-main {
+    width: 200px;
+  }
+}
+
+@media all and (max-width: 850px) and (min-width: 650px) {
+  .member-main {
+    padding: 0% 9% 2%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .member-main {
+    padding: 0% 6% 2%;
+  }
+  .member-card {
+    grid-template-columns: repeat(auto-fit, minmax(179px, 1fr));
+  }
+  .member-card-main {
+    width: 200px;
+  }
+}
+@media all and (max-width: 500px) {
+  .member-main {
+    padding: 0% 3% 2%;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .member-main {
+    padding: 0% 10% 2%;
+  }
+  .member-card-main {
+    width: 260px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .member-card-main {
+    width: 200px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .heading-members {
+    .heading-home {
+      .title-home {
+        font-size: 30px;
+        line-height: 18px;
+      }
+      .dash-home {
+        width: 29px;
+        height: 3.6px;
       }
     }
   }
 }
 
-@media all and (max-width: 750px) {
-  .member-main {
+@media all and (max-width: 400px) {
+  .heading-members {
     .heading-home {
       .title-home {
-        font-size: 40px;
-        padding: 0 10px;
+        font-size: 24px;
+        line-height: 18px;
+        letter-spacing: -1.2px;
       }
       .dash-home {
-        width: 42px;
-        height: 4px;
+        width: 18px;
+        height: 3px;
       }
     }
   }

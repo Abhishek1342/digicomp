@@ -7,12 +7,14 @@ import { memberDetail } from "./member-content";
 
 function Member() {
   return (
-    <div className="member-main">
+    <div className="heading-members">
       <Heading head="Working Members" />
-      <div className="member-card">
-        {memberDetail.map((cards) => {
-          return <MemberCard key={cards.id} {...cards}></MemberCard>;
-        })}
+      <div className="member-main">
+        <div className="member-card">
+          {memberDetail.map((cards) => {
+            return <MemberCard key={cards.id} {...cards}></MemberCard>;
+          })}
+        </div>
       </div>
     </div>
   );
