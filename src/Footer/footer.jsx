@@ -16,15 +16,15 @@ const Footer = () => {
           <h2 className="grand-2-foot-head">Quick Links</h2>
           <ul className="grand-2-foot-list">
             <Link to="/doctors" className="grand-2-foot-link">
-              <i class="far fa-hand-point-right"></i>&nbsp;
+              <i class="fas fa-user-md"></i>&nbsp;
               <li>Doctors</li>
             </Link>
             <Link to="/diseases" className="grand-2-foot-link">
-              <i class="far fa-hand-point-right"></i>&nbsp;
+              <i class="fas fa-briefcase-medical"></i>&nbsp;
               <li>Diseases</li>
             </Link>
             <Link to="/specialists" className="grand-2-foot-link">
-              <i class="far fa-hand-point-right"></i>&nbsp;
+              <i class="fas fa-star-of-life"></i>&nbsp;
               <li>Specialists</li>
             </Link>
           </ul>
@@ -33,15 +33,15 @@ const Footer = () => {
           <h2 className="grand-2-foot-head">Contact Us</h2>
           <ul className="grand-2-foot-list">
             <a href="tel:+000000000000" className="grand-2-foot-link">
-              <i class="far fa-hand-point-right"></i>&nbsp;
+              <i class="fas fa-phone-alt"></i>&nbsp;
               <li>+00 0000000000</li>
             </a>
             <a href="mailto:abc@digicomp.com" className="grand-2-foot-link">
-              <i class="far fa-hand-point-right"></i>&nbsp;
+              <i class="fas fa-envelope"></i>&nbsp;
               <li>abc@digicomp.com</li>
             </a>
             <Link to="/contact us" className="grand-2-foot-link">
-              <i class="far fa-hand-point-right"></i>&nbsp;
+              <i class="fas fa-hand-holding-medical"></i>&nbsp;
               <li>Help</li>
             </Link>
           </ul>
@@ -69,7 +69,7 @@ const Footer = () => {
               <li>Terms and Conditions</li>
             </Link>
             <Link to="/how to use" className="grand-2-foot-link">
-              <i class="far fa-hand-point-right"></i>&nbsp;
+              <i class="far fa-play-circle"></i>&nbsp;
               <li>How to Use</li>
             </Link>
           </ul>

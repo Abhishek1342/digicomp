@@ -3,14 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  height: 50px;
   background: #eeeeee;
   border-radius: 0 0 4px 4px;
   .child-1-name {
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 18px;
     color: #000000;
   }
   .child-1-merit {
@@ -18,7 +18,7 @@
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 18px;
     color: #000000;
     .typewriter {
       font-weight: 600;
@@ -27,4 +27,55 @@
 }
 .Typewriter__wrapper {
   font-weight: 600;
+}
+
+@media all and (max-width: 1150px) and (min-width: 850px) {
+  .grand-with-name {
+    height: 40px;
+    .child-1-name {
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .child-1-merit {
+      font-size: 12px;
+    }
+  }
+}
+@media all and (max-width: 600px) {
+  .grand-with-name {
+    height: 40px;
+    .child-1-name {
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .child-1-merit {
+      font-size: 12px;
+    }
+  }
+}
+
+@media all and (max-width: 450px) {
+  .grand-with-name {
+    height: 50px;
+    .child-1-name {
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .child-1-merit {
+      font-size: 14px;
+    }
+  }
+}
+
+@media all and (max-width: 350px) {
+  .grand-with-name {
+    height: 40px;
+    .child-1-name {
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .child-1-merit {
+      font-size: 12px;
+    }
+  }
 }
