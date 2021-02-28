@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 30px 0 0 0;
 }
 .detail-card {
   width: 1100px;
@@ -48,4 +49,9 @@
   font-size: 1.9rem;
   font-weight: 400;
   color: #8140ff;
+}
+
+.detail-parameters {
+  font-size: 28px;
+  font-weight: 500;
 }
