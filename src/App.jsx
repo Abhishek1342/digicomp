@@ -9,6 +9,7 @@ import Policies from "./Terms-Policies/policy";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HowToUse from "./How to Use/how";
 import Contactus from "./Contact us/contactus";
+import Details from "./Doctors profile/detail-card";
 
 const Routing = () => {
   return (
@@ -23,6 +24,7 @@ const Routing = () => {
           <Route path="/privacy policy" exact component={Policies} />
           <Route path="/how to use" exact component={HowToUse} />
           <Route path="/contact us" exact component={Contactus} />
+          <Route path="/details" exact component={Details} />
 
           {/* 
           
