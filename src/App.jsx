@@ -11,6 +11,8 @@ import HowToUse from "./How to Use/how";
 import Contactus from "./Contact us/contactus";
 import Details from "./Doctors profile/detail-card";
 
+import User from "./User Profile/user";
+
 const Routing = () => {
   return (
     <React.Fragment>
@@ -25,6 +27,7 @@ const Routing = () => {
           <Route path="/how to use" exact component={HowToUse} />
           <Route path="/contact us" exact component={Contactus} />
           <Route path="/details" exact component={Details} />
+          <Route path="/profile" exact component={User} />
 
           {/* 
           

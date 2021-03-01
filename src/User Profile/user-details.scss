@@ -1,0 +1,72 @@
+.check {
+  display: flex;
+}
+
+.user-profile-main {
+  position: fixed;
+  padding-top: 60px;
+  width: 400px;
+  height: 100%;
+  background: rgba(89, 104, 118, 0.59);
+  .user-profile-child-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 110px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 0.5px solid white;
+    background: url("./images/Pratik.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.25));
+    color: white;
+    .change-icon-user-photo {
+      visibility: hidden;
+      opacity: 0;
+      font-size: 18px;
+      margin-bottom: 6px;
+      i {
+        margin: 0 10px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      transition: visibility 0s, opacity 0.5s linear;
+    }
+    p {
+      visibility: hidden;
+      opacity: 0;
+      font-size: 13px;
+      line-height: 15px;
+      text-align: center;
+      font-weight: 600;
+      transition: visibility 0s, opacity 0.5s linear;
+    }
+    &:hover .change-icon-user-photo {
+      visibility: visible;
+      opacity: 1;
+    }
+    &:hover p {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  .user-profile-child-photo::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    transition: all 0.5s ease;
+  }
+  .user-profile-child-photo:hover::before {
+    background: rgb(68, 62, 62);
+    opacity: 0.6;
+  }
+}
