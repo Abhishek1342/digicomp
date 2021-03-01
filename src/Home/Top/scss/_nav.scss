@@ -67,6 +67,7 @@
       background-color: #d1c3fa;
       border-right: 3.6px solid #9278dd;
       z-index: 2;
+      transition: visibility 0s, opacity 0.5s linear;
       .home-top-dropdown-item {
         color: white;
         text-decoration: navajowhite;
