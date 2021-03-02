@@ -7,11 +7,15 @@ function DetailCard() {
   const [numberofpatients, setnumberofpatients] = useState(1);
 
   function increasenumberofpatients() {
-    return setnumberofpatients + 1;
+    if (numberofpatients > 0) {
+      setnumberofpatients(numberofpatients + 1);
+    }
   }
 
   function decreasenumberofpatients() {
-    return setnumberofpatients - 1;
+    if (numberofpatients > 1) {
+      setnumberofpatients(numberofpatients - 1);
+    }
   }
 
   return (
@@ -73,7 +77,7 @@ function DetailCard() {
             <div className="counter-container">
               <button
                 className="counter-button"
-                onclick={decreasenumberofpatients()}
+                onClick={decreasenumberofpatients}
               >
                 -
               </button>
@@ -84,7 +88,7 @@ function DetailCard() {
               />
               <button
                 className="counter-button"
-                onclick={increasenumberofpatients()}
+                onClick={increasenumberofpatients}
               >
                 +
               </button>

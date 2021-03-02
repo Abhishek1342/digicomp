@@ -17,6 +17,7 @@
   border-radius: 15px;
   padding: 5%;
   position: relative;
+  min-width: 280px;
 }
 .banner {
   position: absolute;
@@ -169,4 +170,99 @@
 .counter-button:active {
   transform: translate(4px, 2px);
   box-shadow: none;
+}
+@media only screen and (max-width: 1000px) {
+  .Card-hdding {
+    width: 12rem;
+    height: 6rem;
+  }
+  .banner {
+    top: -23px;
+    left: -23px;
+  }
+  .banner img {
+    width: 150px;
+    height: 150px;
+  }
+  .status-txt {
+    top: 65px;
+    left: 40px;
+    font-size: 24px;
+  }
+  .buttons-container {
+    width: 14rem;
+    height: 8rem;
+  }
+}
+
+@media only screen and (max-width: 726px) {
+  .parameter {
+    font-size: 20px;
+    min-width: 100px;
+    margin: 0 10px 0 0;
+  }
+  .colon {
+    margin: 0 20px 0 0;
+  }
+  .value {
+    font-size: 14px;
+  }
+  .buttons-container {
+    width: 12rem;
+    height: 7rem;
+  }
+}
+
+@media only screen and (max-width: 556px) {
+  .Card-hdding {
+    width: 10rem;
+    height: 5rem;
+  }
+  .Card-hdding h3 {
+    font-size: 1.6rem;
+  }
+  .banner {
+    top: -16px;
+    left: -16px;
+  }
+  .banner img {
+    width: 100px;
+    height: 100px;
+  }
+  .status-txt {
+    top: 40px;
+    left: 25px;
+    font-size: 18px;
+  }
+  .parameter {
+    font-size: 18px;
+    min-width: 90px;
+    margin: 0 10px 0 0;
+  }
+  .colon {
+    margin: 0 20px 0 0;
+  }
+  .value {
+    font-size: 14px;
+  }
+  .detail-card {
+    align-items: unset;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .detail-contents {
+    height: 80%;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .detail-card {
+    height: 45rem;
+  }
+  .Card-hdding {
+    width: 7rem;
+    height: 3.5rem;
+  }
+  .Card-hdding h3 {
+    font-size: 1.2rem;
+  }
 }
