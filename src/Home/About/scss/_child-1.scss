@@ -62,7 +62,8 @@
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.32);
     border-radius: 15px;
     animation: slider 16s infinite linear;
-    transition: all 0.3s ease;
+    transition: all 1s linear;
+
     .grand-image {
       display: none;
     }

@@ -1,13 +1,20 @@
-.check {
+.user-test {
   display: flex;
+}
+.p-test {
+  overflow: auto;
+  height: 690px;
+  &::scroolbar {
+    width: 10px;
+  }
 }
 
 .user-profile-main {
-  position: fixed;
-  padding-top: 60px;
+  padding-top: 90px;
   width: 400px;
-  height: 100%;
-  background: rgba(89, 104, 118, 0.59);
+  height: 690px;
+  background: rgba(115, 113, 113, 0.2);
+  // background: rgba(89, 104, 118, 0.59);
   .user-profile-child-photo {
     display: flex;
     flex-direction: column;
@@ -32,6 +39,7 @@
         margin: 0 10px;
         &:hover {
           cursor: pointer;
+          color: #c4c4c4;
         }
       }
       transition: visibility 0s, opacity 0.5s linear;
@@ -68,5 +76,54 @@
   .user-profile-child-photo:hover::before {
     background: rgb(68, 62, 62);
     opacity: 0.6;
+  }
+  .user-profile-child-details {
+    .user-profile-child-name {
+      font-weight: 500;
+      font-size: 24px;
+      margin: 40px 0px 0px 60px;
+    }
+    .user-profile-child-address {
+      span {
+        font-weight: 600;
+      }
+      margin: 32px 0px 0px 60px;
+
+      font-weight: 400;
+      font-size: 14px;
+    }
+    .user-profile-child-phone {
+      span {
+        font-weight: 600;
+      }
+      margin: 32px 0px 0px 60px;
+
+      font-weight: 400;
+      font-size: 14px;
+    }
+    .user-profile-child-email {
+      span {
+        font-weight: 600;
+      }
+      margin: 32px 0px 0px 60px;
+
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+  .user-profile-child-edit {
+    margin: 40px 30px 0px 60px;
+    padding: 7px 14px;
+    background: #272727;
+    border-radius: 3px;
+    border: 2px solid black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: all 0.3s linear;
+    &:hover {
+      border: 2px solid white;
+    }
   }
 }

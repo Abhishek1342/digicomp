@@ -8,6 +8,7 @@ const User = () => {
     <div>
       <Navbar />
       <UserDetails />
+      <Footer />
     </div>
   );
 };
