@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./detail-card.css";
 import Banner from "./images/banner.svg";
 
 function DetailCard() {
-  var status = "Open";
+  // var status = "Open";
+  const [numberofpatients, setnumberofpatients] = useState(1);
+
+  function increasenumberofpatients() {
+    return setnumberofpatients + 1;
+  }
+
+  function decreasenumberofpatients() {
+    return setnumberofpatients - 1;
+  }
+
   return (
     <div className="detail-card-container">
       <div className="detail-card">
         <div className="banner">
-          <p className="status-txt">{status}</p>
+          <p className="status-txt">Open</p>
           <img src={Banner} />
         </div>
         <div className="Card-hdding">
@@ -61,9 +71,23 @@ function DetailCard() {
           <div className="counter-wrapper">
             <b>No. of patients</b>
             <div className="counter-container">
-              <button className="counter-button">-</button>
-              <input className="value-by-user" type="text" value="0" />
-              <button className="counter-button">+</button>
+              <button
+                className="counter-button"
+                onclick={decreasenumberofpatients()}
+              >
+                -
+              </button>
+              <input
+                className="value-by-user"
+                type="text"
+                value={numberofpatients}
+              />
+              <button
+                className="counter-button"
+                onclick={increasenumberofpatients()}
+              >
+                +
+              </button>
             </div>
           </div>
           <button className="book-button" type="submit">
