@@ -10,7 +10,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HowToUse from "./How to Use/how";
 import Contactus from "./Contact us/contactus";
 import Details from "./Doctors profile/detail-card";
-
 import User from "./User Profile/user";
 
 const Routing = () => {
@@ -18,7 +17,6 @@ const Routing = () => {
     <React.Fragment>
       <Router>
         <Switch>
-          <Route path="/" exact component={Home} />
           <Route path="/diseases" exact component={Disease} />
           <Route path="/doctors" exact component={Doctor} />
           <Route path="/specialists" exact component={Specialists} />
