@@ -4,7 +4,7 @@ import HomePage from "./app";
 const Home = () => {
   useEffect(() => {
     document.title = `DIGICOMP`;
-  });
+  },[]);
   return <HomePage />;
 };
 

@@ -14,7 +14,10 @@
     "react-helmet": "^6.1.0",
     "react-modal": "^3.12.1",
     "react-responsive-modal": "^6.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "react-visibility-sensor": "^5.1.1",
+    "typewriter-effect": "^2.17.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
