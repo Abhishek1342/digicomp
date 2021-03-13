@@ -6,7 +6,7 @@ import Specialists from "./Specialists/index";
 import Error from "./error";
 import Terms from "./Terms-Policies/terms";
 import Policies from "./Terms-Policies/policy";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HowToUse from "./How to Use/how";
 import Contactus from "./Contact us/contactus";
 import Details from "./Doctors profile/detail-card";
