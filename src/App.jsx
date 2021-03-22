@@ -16,7 +16,6 @@ import User from "./User Profile/user";
 const Routing = () => {
   return (
     <React.Fragment>
-      <h2>i m a boy with big cock</h2>
       <Router>
         <Switch>
           <Route path="/" exact component={Home} />
