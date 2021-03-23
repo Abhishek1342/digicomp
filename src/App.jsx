@@ -9,8 +9,7 @@ import Policies from "./Terms-Policies/policy";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HowToUse from "./How to Use/how";
 import Contactus from "./Contact us/contactus";
-import Details from "./Doctors profile/detail-card";
-
+import DoctorName from "./Doctors profile/app";
 import User from "./User Profile/user";
 
 const Routing = () => {
@@ -26,9 +25,11 @@ const Routing = () => {
           <Route path="/privacy policy" exact component={Policies} />
           <Route path="/how to use" exact component={HowToUse} />
           <Route path="/contact us" exact component={Contactus} />
-          <Route path="/details" exact component={Details} />
+          <Route path="/doctor profile" exact component={DoctorName} />
+
+          {/* <Route path="/details" exact component={Details} /> */}
           <Route path="/profile" exact component={User} />
-          
+
           {/* 
           
           <Route path="/profile" exact component={} />

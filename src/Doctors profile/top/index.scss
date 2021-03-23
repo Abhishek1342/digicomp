@@ -1,0 +1,75 @@
+.doctors-profile-starting {
+  margin-bottom: 4%;
+  .doctors-profile-top {
+    padding: 0 2%;
+    display: flex;
+    .doctors-profile-top-image {
+      width: 36%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 320px;
+        height: 260px;
+        border-radius: 0;
+        border: 7px solid #fff;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.32);
+        border-radius: 15px;
+      }
+    }
+    .doctors-profile-top-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 55%;
+      .doctors-profile-top-content-child-name {
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        margin-bottom: 14px;
+      }
+      .doctors-profile-top-content-child-degree {
+        font-size: 20px;
+        letter-spacing: 0.027em;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+
+      .doctors-profile-top-content-child-desc {
+        font-size: 18px;
+        letter-spacing: 0.018em;
+        text-align: justify;
+        line-height: 1.4;
+      }
+    }
+  }
+  .doctors-profile-top-divider {
+    margin-top: 50px;
+
+    .doctors-profile-top-divider-img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin-top: -50px;
+        z-index: 3;
+        width: 100px;
+        box-shadow: -5px -3px 10px rgba(255, 255, 255, 0.48),
+          3px 5px 10px rgba(0, 0, 0, 0.11);
+        border-radius: 50%;
+      }
+      .semi-circle {
+        width: 120px;
+        height: 60px;
+        margin-top: -110px;
+        border: 1px solid #000;
+        border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        border-bottom: 2px solid white;
+        z-index: 2;
+      }
+    }
+  }
+}

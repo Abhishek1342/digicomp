@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./detail-card.css";
-import Banner from "./images/banner.svg";
+import Banner from "../images/banner.svg";
 
 function DetailCard() {
   // var status = "Open";

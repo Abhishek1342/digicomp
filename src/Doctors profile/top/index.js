@@ -1,16 +1,40 @@
-import React from 'react';
-import docImg from './doctor-in-branding-article 1.jpg';
-import ReactDom from 'react-dom';
-import './index.css';
-function Cards(){
-    return(<section className="main-div">
-        <div className="pic-div"><img src={docImg} className="doc-img"></img></div>
-        <div className="text-div">
-            <p className="doc-name"><b>DR AMRITANAND BABA</b></p>
-            <p className="education">MBBS PHD FROM IIITDM KURNOOL<br></br>JHOLACHAP CLINIC</p>
-            <p className="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+import React from "react";
+import "./index.scss";
+import DocImg from "./Dr.dummy.webp";
+import Symbol from "./symbol.png";
+const Cards = () => {
+  return (
+    <div className="doctors-profile-starting">
+      <div className="doctors-profile-top">
+        <div className="doctors-profile-top-image">
+          <img src={DocImg} alt="Doctor" />
         </div>
-       </section>
-    );
-}
-ReactDom.render(<Cards></Cards>,document.getElementById('root'));
+        <div className="doctors-profile-top-content">
+          <div className="doctors-profile-top-content-child-name">
+            Dr. Dummy
+          </div>
+          <div className="doctors-profile-top-content-child-degree">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+          </div>
+          <div className="doctors-profile-top-content-child-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+            nihil, provident, numquam aspernatur ea deserunt consequatur facere
+            optio deleniti pariatur officiis neque quibusdam, impedit
+            repellendus aut? Itaque commodi libero ratione quaerat est. Est
+            consequatur tenetur ea ipsam corporis magnam dolorum minus? Fugiat
+            facere dolorem dolore dolores est voluptatibus velit suscipit!
+          </div>
+        </div>
+      </div>
+      <div className="doctors-profile-top-divider">
+        <hr />
+        <div className="doctors-profile-top-divider-img">
+          <img src={Symbol} alt="symbol" />
+          <div className="semi-circle"></div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Cards;
