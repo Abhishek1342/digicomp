@@ -11,15 +11,14 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-image: url("../Images/pattern/cubes.png");
 }
 .texture {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
-  width: 50%;
   height: 100%;
-  background-image: url("../Images/pattern/cubes.png");
   padding: 1% 10%;
   justify-content: space-evenly;
 }
@@ -29,4 +28,20 @@
   font-size: 1.1rem;
   font-weight: 600;
   color: #5a5a5a;
+}
+@media only screen and (max-width: 550px) {
+  .page-info {
+    font-size: 0.9rem;
+  }
+  .landing {
+    height: 15rem;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .page-info {
+    font-size: 0.7rem;
+  }
+  .landing {
+    height: 12rem;
+  }
 }
