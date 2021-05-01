@@ -41,10 +41,18 @@ function Navbar() {
           ></i>
         </div>
         <div className="home-top-dropdown-box" style={{ display: display }}>
-          <Link className="home-top-dropdown-item">Your Profile</Link>
-          <Link className="home-top-dropdown-item">Doctors</Link>
-          <Link className="home-top-dropdown-item">Specialists</Link>
-          <Link className="home-top-dropdown-item">Diseases</Link>
+          <Link to="/profile" className="home-top-dropdown-item">
+            Your Profile
+          </Link>
+          <Link to="./doctors" className="home-top-dropdown-item">
+            Doctors
+          </Link>
+          <Link to="/specialists" className="home-top-dropdown-item">
+            Specialists
+          </Link>
+          <Link to="/diseases" className="home-top-dropdown-item">
+            Diseases
+          </Link>
           <Link className="home-top-dropdown-item">Sign Out </Link>
         </div>
       </div>
