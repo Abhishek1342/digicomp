@@ -18,6 +18,7 @@ const Routing = () => {
       <Router>
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/digicomp" exact component={Home} />
           <Route path="/diseases" exact component={Disease} />
           <Route path="/doctors" exact component={Doctor} />
           <Route path="/specialists" exact component={Specialists} />
