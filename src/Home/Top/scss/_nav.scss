@@ -27,8 +27,15 @@
       transition: 0.3s ease;
       transition-property: box-shadow;
       outline: none;
+      cursor: pointer;
       &:active {
         box-shadow: none;
+      }
+      &:hover {
+        color: #2e2e2e;
+        box-shadow: -4px -4px 5px 4px rgba(255, 255, 255, 0.24),
+          4px 4px 5px 4px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
       }
     }
   }
