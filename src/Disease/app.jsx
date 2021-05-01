@@ -6,6 +6,7 @@ import "./index.scss";
 
 import { diseaceCards } from "./cards-content";
 import DiseaseCard from "./card-component";
+import Footer from "../Footer/footer";
 
 const DiseasePage = () => {
   return (
@@ -19,6 +20,7 @@ const DiseasePage = () => {
           return <DiseaseCard key={cards.id} {...cards}></DiseaseCard>;
         })}
       </main>
+      <Footer />
     </body>
   );
 };
