@@ -11,7 +11,7 @@ export const typeCard = [
   },
   {
     id: 2,
-    name: "Speciaists",
+    name: "Specialists",
     img: specialistImg,
     link: "./specialists",
   },
