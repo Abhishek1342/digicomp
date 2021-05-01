@@ -27,6 +27,10 @@ const Footer = () => {
               <i class="fas fa-star-of-life"></i>&nbsp;
               <li>Specialists</li>
             </Link>
+            <Link to="/admin" className="grand-2-foot-link">
+              <i class="fas fa-handshake"></i>&nbsp;
+              <li>Login as Partner</li>
+            </Link>
           </ul>
         </div>
         <div className="contact-footer">
