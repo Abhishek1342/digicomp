@@ -1,15 +1,20 @@
 const bcrypt = require("bcryptjs");
+const express = require("express");
 const nodemailer = require("nodemailer");
 const { json } = require("express");
-const express = require("express");
+
 require("../db/connection");
 const User = require("../model/userSchema");
 const router = express.Router();
 
-const otpgenerator = Math.floor(Math.random() * 1000000);
+var otpgenerator = Math.floor(Math.random() * 1000000);
+otpgenerator = parseInt(otpgenerator);
+console.log(otpgenerator);
+
+var { username, phone, email, password, cpassword } = 0;
 
 router.post("/user-register", async (req, res) => {
-    const { username, phone, email, password, cpassword } = req.body;
+    var { username, phone, email, password, cpassword } = req.body;
     /*checking if user have entered all field or not*/
     if (!username || !phone || !email || !password || !cpassword) {
         return res.status(422).json({ message: "please fill all data" });
@@ -43,40 +48,54 @@ router.post("/user-register", async (req, res) => {
                     from: "noreply.digicomp@gmail.com",
                     to: email,
                     subject: "Digicomp OTP for email varification",
-                    text: otpgenerator,
+                    html:
+                        "<h3> Your one time password (otp) for registration in Digicomp is : </h3>" +
+                        "<h2>" +
+                        otpgenerator +
+                        "</h2>",
                 };
 
                 transporter.sendMail(mailoptions, (err, data) => {
                     if (err) {
                         console.log("Mail not sent" + err);
+                        res.status(400).json({ error: "Mail not sent" });
                     } else {
                         console.log("Email sent");
+                        res.status(200).json({ message: "Mail sent" });
+                        res.redirect("/otp");
                     }
                 });
-                /*is new email and username then save the user*/
-                const newUser = new User({
-                    username,
-                    phone,
-                    email,
-                    password,
-                    cpassword,
-                });
-
-                const addUser = await newUser.save();
-                if (addUser) {
-                    console.log("successfull");
-                    res.status(201).json({
-                        message: "sucessfully added new user",
-                    });
-                }
             }
         }
     } catch (err) {
-        console.log(err);
+        console.log("err register");
     }
 });
 
-// router.get("/verify-otp");
+router.post("/otp", async (res, req) => {
+    /*is new email and username then save the user*/
+
+    try {
+        console.log(req.body.otp);
+        const newUser = new User({
+            username,
+            phone,
+            email,
+            password,
+            cpassword,
+        });
+
+        const addUser = await newUser.save();
+        if (addUser) {
+            console.log("successfull");
+            res.status(201).json({
+                message: "sucessfully added new user",
+            });
+        }
+    } catch (err) {
+        console.log("err otp" + err);
+    }
+});
 
 router.post("/user-login", async (req, res) => {
     const { email, password } = req.body;

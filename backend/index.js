@@ -26,12 +26,12 @@ const User = require("./model/userSchema");
 //   }
 // });
 
-app.use(require("./route/userauth"));
+app.use(require("./route/userauth.js"));
 
 app.get("/", (req, res) => {
-  res.send("<h1>hello</h1>");
+    res.send("<h1>hello</h1>");
 });
 
 app.listen(PORT, () => {
-  console.log("Server started on port " + PORT);
+    console.log("Server started on port " + PORT);
 });
