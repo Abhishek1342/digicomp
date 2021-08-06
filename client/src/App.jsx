@@ -13,33 +13,33 @@ import DoctorName from "./Doctors profile/app";
 import User from "./User Profile/user";
 
 const Routing = () => {
-  return (
-    <React.Fragment>
-      <Router>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/digicomp" exact component={Home} />
-          <Route path="/diseases" exact component={Disease} />
-          <Route path="/doctors" exact component={Doctor} />
-          <Route path="/specialists" exact component={Specialists} />
-          <Route path="/terms of use" exact component={Terms} />
-          <Route path="/privacy policy" exact component={Policies} />
-          <Route path="/how to use" exact component={HowToUse} />
-          <Route path="/contact us" exact component={Contactus} />
-          <Route path="/doctor profile" exact component={DoctorName} />
+   return (
+      <React.Fragment>
+         <Router>
+            <Switch>
+               <Route path="/" exact component={Home} />
+               <Route path="/digicomp" exact component={Home} />
+               <Route path="/diseases" exact component={Disease} />
+               <Route path="/doctors" exact component={Doctor} />
+               <Route path="/specialists" exact component={Specialists} />
+               <Route path="/terms of use" exact component={Terms} />
+               <Route path="/privacy policy" exact component={Policies} />
+               <Route path="/how to use" exact component={HowToUse} />
+               <Route path="/contact us" exact component={Contactus} />
+               <Route path="/doctor profile" exact component={DoctorName} />
 
-          {/* <Route path="/details" exact component={Details} /> */}
-          <Route path="/profile" exact component={User} />
+               {/* <Route path="/details" exact component={Details} /> */}
+               <Route path="/profile" exact component={User} />
 
-          {/* 
+               {/* 
           
           <Route path="/profile" exact component={} />
           */}
-          <Route path="*" exact component={Error} />
-        </Switch>
-      </Router>
-    </React.Fragment>
-  );
+               <Route path="*" exact component={Error} statusCode={404} />
+            </Switch>
+         </Router>
+      </React.Fragment>
+   );
 };
 
 export default Routing;

@@ -27,10 +27,9 @@ function SignUp() {
       setUser({ ...user, [name]: value });
    };
 
-   const submitRegister = (e) => {
+   const submitRegister = async (e) => {
       if (!username || !phone || !email || !password || !cpassword) {
          e.preventDefault();
-
          console.log("fill all fields");
       } else {
          if (password !== cpassword) {
@@ -38,7 +37,18 @@ function SignUp() {
             console.log("Password do not match");
          } else {
             e.preventDefault();
-            console.log(user);
+            const res = await fetch("http://localhost:8000/user-register", {
+               method: "POST",
+               headers: {
+                  "Content-Type": "application/json",
+               },
+               body: JSON.stringify(user),
+            });
+
+            let otp = prompt("Please enter OTP:", "");
+            if (otp == null || otp == "") {
+               window.alert("please enter otp sent to your email");
+            } else console.log(res);
          }
       }
    };
