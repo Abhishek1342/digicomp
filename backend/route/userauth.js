@@ -7,10 +7,12 @@ require("../db/connection");
 const User = require("../model/userSchema");
 const router = express.Router();
 
-var { username, phone, email, password, cpassword } = 0;
+let USER;
+let otpgenerator;
 
 router.post("/user-register", async (req, res) => {
-    var { username, phone, email, password, cpassword } = req.body;
+    USER = req.body;
+    const { username, phone, email, password, cpassword } = req.body;
     /*checking if user have entered all field or not*/
     if (!username || !phone || !email || !password || !cpassword) {
         return res.status(422).json({ message: "please fill all data" });
@@ -38,7 +40,7 @@ router.post("/user-register", async (req, res) => {
                     error: "password and confirm password is not same",
                 });
             } else {
-                var otpgenerator = Math.floor(Math.random() * 1000000);
+                otpgenerator = Math.floor(Math.random() * 1000000);
                 otpgenerator = parseInt(otpgenerator);
 
                 let transporter = require("../email/sendmail");
@@ -73,47 +75,38 @@ router.post("/user-register", async (req, res) => {
     } catch (err) {
         console.log("err register");
     }
-    return otpgenerator, { username, phone, email, password, cpassword };
 });
 
-router.post(
-    "/otp",
-    async (
-        res,
-        req,
-        otpgenerator,
-        { username, phone, email, password, cpassword }
-    ) => {
-        /*is new email and username then save the user*/
-        try {
-            var otpuser = req.body;
-            console.log(otpuser);
-            if (otpuser != otpgenerator) {
-                res.status(402).json({
-                    message: "Otp incorrect",
-                });
-            } else {
-                const newUser = new User({
-                    username,
-                    phone,
-                    email,
-                    password,
-                    cpassword,
-                });
+router.post("/otp", async (req, res) => {
+    /*is new email and username then save the user*/
+    var otpuser = req.body.otp;
+    const { username, phone, email, password, cpassword } = USER;
 
-                const addUser = await newUser.save();
-                if (addUser) {
-                    console.log("successfull");
-                    res.status(201).json({
-                        message: "sucessfully added new user",
-                    });
-                }
+    console.log(otpuser);
+    try {
+        if (otpuser != otpgenerator) {
+            res.status(402).send("Otp incorrect");
+        } else {
+            const newUser = new User({
+                username,
+                phone,
+                email,
+                password,
+                cpassword,
+            });
+
+            const addUser = await newUser.save();
+            if (addUser) {
+                console.log("successfull");
+                res.status(201).json({
+                    message: "sucessfully added new user",
+                });
             }
-        } catch (err) {
-            console.log("err otp" + err);
         }
+    } catch (err) {
+        console.log("err otp" + err);
     }
-);
+});
 
 router.post("/user-login", async (req, res) => {
     const { email, password } = req.body;

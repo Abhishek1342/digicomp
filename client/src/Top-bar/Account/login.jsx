@@ -67,7 +67,7 @@ function Login() {
             </div>
             <form className="form-container">
                 <Textbox
-                    type="Text"
+                    type="email"
                     id="username-login"
                     placeholder="Enter username"
                     onChange={handelInputs}
