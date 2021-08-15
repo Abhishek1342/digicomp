@@ -6,6 +6,7 @@ import InUp from "./inup";
 import Login from "./login";
 import { modalStyle } from "../modalStyle";
 import axios from "axios";
+import { useForm } from "react-hook-form";
 
 function SignUp() {
     const [modalLoginIsOpen, setModalLoginIsOpen] = useState(false);
@@ -66,7 +67,7 @@ function SignUp() {
     return (
         <div className="popup-container extendheight">
             <InUp InUpTitle="Sign Up" />
-            <div className="login-partner">
+            {/* <div className="login-partner">
                 <a href="/#">
                     <img
                         src="https://img.icons8.com/color/38/000000/google-logo.png"
@@ -85,7 +86,7 @@ function SignUp() {
                         alt="FaceBook icon"
                     />
                 </a>
-            </div>
+            </div> */}
             <form className="form-container signup-gap">
                 <Textbox
                     type="Text"
@@ -96,7 +97,7 @@ function SignUp() {
                     placeholder="Enter username"
                 />
                 <Textbox
-                    type="Tel"
+                    type="tel"
                     id="Phone-Signup"
                     value={user.phone}
                     name="phone"

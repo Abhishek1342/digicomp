@@ -69,7 +69,7 @@ function Login() {
                 <Textbox
                     type="email"
                     id="username-login"
-                    placeholder="Enter username"
+                    placeholder="Enter email"
                     onChange={handelInputs}
                     name="email"
                     value={login.email}
