@@ -10,6 +10,7 @@ import { useForm } from "react-hook-form";
 
 function SignUp() {
     const [modalLoginIsOpen, setModalLoginIsOpen] = useState(false);
+    const { register, handleSubmit, error } = useForm();
 
     const [user, setUser] = useState({
         username: "",
@@ -35,7 +36,8 @@ function SignUp() {
                 e.preventDefault();
                 console.log("fill all fields");
             } else {
-                if (password !== cpassword) {
+                if (username) {
+                } else if (password !== cpassword) {
                     e.preventDefault();
                     console.log("Password do not match");
                 } else {
@@ -62,6 +64,7 @@ function SignUp() {
         } catch (err) {
             console.log(err);
         }
+        console.log(e);
     };
 
     return (
@@ -91,45 +94,50 @@ function SignUp() {
                 <Textbox
                     type="Text"
                     id="username-Signup"
-                    value={user.username}
+                    // value={user.username}
                     name="username"
-                    onChange={handelInputSignup}
+                    // onChange={handelInputSignup}
                     placeholder="Enter username"
+                    ref={register}
                 />
                 <Textbox
                     type="tel"
                     id="Phone-Signup"
-                    value={user.phone}
+                    // value={user.phone}
                     name="phone"
-                    onChange={handelInputSignup.bind()}
+                    // onChange={handelInputSignup.bind()}
                     placeholder="Enter Phone Number"
+                    ref={register}
                 />
                 <Textbox
                     type="Email"
                     id="Email-Signup"
-                    value={user.email}
+                    // value={user.email}
                     name="email"
-                    onChange={handelInputSignup.bind()}
+                    // onChange={handelInputSignup.bind()}
                     placeholder="Enter Email"
+                    ref={register}
                 />
                 <PwdField
                     id="Password-signup"
-                    value={user.password}
+                    // value={user.password}
                     name="password"
-                    onChange={handelInputSignup}
+                    // onChange={handelInputSignup}
                     placeholder="Enter Password"
+                    ref={register}
                 />
                 <PwdField
                     id="cnf-password-signup"
-                    value={user.cpassword}
+                    // value={user.cpassword}
                     name="cpassword"
-                    onChange={handelInputSignup}
+                    // onChange={handelInputSignup}
                     placeholder="Confirm Password"
+                    ref={register}
                 />
                 <Submit
                     id="submit-signup"
                     value="Sign Up"
-                    onClick={submitRegister}
+                    onClick={handleSubmit(submitRegister)}
                     name="submitSignUp"
                 />
             </form>
